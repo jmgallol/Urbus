@@ -1,0 +1,71 @@
+2026-03-18 01:31:55  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s424ms171µs600ns).
+2026-03-18 09:38:55  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h7m7s962ms683µs300ns).
+2026-03-18 12:55:54  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s293ms81µs300ns).
+2026-03-18 13:35:37  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m51s615ms559µs).
+2026-03-18 17:37:17  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h8s685ms979µs700ns).
+2026-03-18 18:46:39  WARN: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m31s486ms394µs500ns).
+2026-03-21 00:43:17  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-03-21 00:43:17  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 20.0.2+9-78
+2026-03-21 00:43:17  INFO: Memory limit heap: 4066mb non-heap: 0mb
+2026-03-21 00:43:17  INFO: Character encoding: UTF-8
+2026-03-21 00:43:17  INFO: Version: 6.12.2
+2026-03-21 00:43:17  INFO: Starting server...
+2026-03-21 00:43:18  INFO: HikariPool-1 - Starting...
+2026-03-21 00:43:19  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-03-21 00:43:19  INFO: HikariPool-1 - Start completed.
+2026-03-21 00:43:19  INFO: Set default schema name to PUBLIC
+2026-03-21 00:43:20  INFO: Successfully acquired change log lock
+2026-03-21 00:43:20  INFO: Clearing database change log checksums for database h2
+2026-03-21 00:43:20  INFO: Successfully released change log lock
+2026-03-21 00:43:20  INFO: Command execution complete
+2026-03-21 00:43:21  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-03-21 00:43:22  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-03-21 00:43:22  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-03-21 00:43:22  INFO: UPDATE SUMMARY
+2026-03-21 00:43:22  INFO: Run:                          0
+2026-03-21 00:43:22  INFO: Previously run:              32
+2026-03-21 00:43:22  INFO: Filtered out:                 0
+2026-03-21 00:43:22  INFO: -------------------------------
+2026-03-21 00:43:22  INFO: Total change sets:           32
+2026-03-21 00:43:22  INFO: Update summary generated
+2026-03-21 00:43:22  INFO: Command execution complete
+2026-03-21 00:43:24  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-03-21 00:43:24  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 20.0.2+9-78
+2026-03-21 00:43:24  INFO: Session workerName=node0
+2026-03-21 00:43:24  INFO: Started oeje10s.ServletContextHandler@49e0b123{ROOT,/,b=file:///C:/Users/user/Desktop/Sercerr_Urbus/traccar/web/,a=AVAILABLE,h=oeje10s.SessionHandler@2e85e3f1{STARTED}}
+2026-03-21 00:43:26  INFO: Started oeje10s.ServletContextHandler@49e0b123{ROOT,/,b=file:///C:/Users/user/Desktop/Sercerr_Urbus/traccar/web/,a=AVAILABLE,h=oeje10s.SessionHandler@2e85e3f1{STARTED}}
+2026-03-21 00:43:26  INFO: Started oejs.ServerConnector@306bf4c3{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-03-21 00:43:26  INFO: Started oejs.Server@5cf80dfb{STARTING}[12.1.6,sto=0] @1422ms
+2026-03-21 00:59:45  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-03-21 01:01:08  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-03-21 01:01:08  INFO: Java runtime name: Java HotSpot(TM) 64-Bit Server VM vendor: Oracle Corporation version: 20.0.2+9-78
+2026-03-21 01:01:08  INFO: Memory limit heap: 4066mb non-heap: 0mb
+2026-03-21 01:01:08  INFO: Character encoding: UTF-8
+2026-03-21 01:01:08  INFO: Version: 6.12.2
+2026-03-21 01:01:08  INFO: Starting server...
+2026-03-21 01:01:09  INFO: HikariPool-1 - Starting...
+2026-03-21 01:01:10  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./data/database user=SA
+2026-03-21 01:01:10  INFO: HikariPool-1 - Start completed.
+2026-03-21 01:01:10  INFO: Set default schema name to PUBLIC
+2026-03-21 01:01:11  INFO: Successfully acquired change log lock
+2026-03-21 01:01:11  INFO: Clearing database change log checksums for database h2
+2026-03-21 01:01:11  INFO: Successfully released change log lock
+2026-03-21 01:01:11  INFO: Command execution complete
+2026-03-21 01:01:11  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-03-21 01:01:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-03-21 01:01:12  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-03-21 01:01:12  INFO: UPDATE SUMMARY
+2026-03-21 01:01:12  INFO: Run:                          0
+2026-03-21 01:01:12  INFO: Previously run:              32
+2026-03-21 01:01:12  INFO: Filtered out:                 0
+2026-03-21 01:01:12  INFO: -------------------------------
+2026-03-21 01:01:12  INFO: Total change sets:           32
+2026-03-21 01:01:12  INFO: Update summary generated
+2026-03-21 01:01:12  INFO: Command execution complete
+2026-03-21 01:01:14  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-03-21 01:01:15  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 20.0.2+9-78
+2026-03-21 01:01:15  INFO: Session workerName=node0
+2026-03-21 01:01:15  INFO: Started oeje10s.ServletContextHandler@3ba46845{ROOT,/,b=file:///C:/Users/user/Desktop/Sercerr_Urbus/traccar/web/,a=AVAILABLE,h=oeje10s.SessionHandler@40a28bda{STARTED}}
+2026-03-21 01:01:17  INFO: Started oeje10s.ServletContextHandler@3ba46845{ROOT,/,b=file:///C:/Users/user/Desktop/Sercerr_Urbus/traccar/web/,a=AVAILABLE,h=oeje10s.SessionHandler@40a28bda{STARTED}}
+2026-03-21 01:01:17  INFO: Started oejs.ServerConnector@66abc325{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-03-21 01:01:17  INFO: Started oejs.Server@39403943{STARTING}[12.1.6,sto=0] @1750ms
