@@ -61,29 +61,29 @@ const useStyles = makeStyles()((theme) => ({
     toggleLabel: {
         fontSize: '0.95rem',
         fontWeight: 600,
-        color: '#f8fafc',
+        color: '#0F172A',
         textTransform: 'uppercase',
         letterSpacing: '0.5px',
         '&.active': {
-            color: '#10B981',
+            color: '#2563EB',
         },
         '&.inactive': {
-            color: '#94a3b8',
+            color: '#94A3B8',
             cursor: 'pointer',
             transition: 'color 0.3s',
             '&:hover': {
-                color: '#cbd5e1',
+                color: '#475569',
             },
         },
     },
     muiSwitch: {
         '& .MuiSwitch-switchBase': {
-            color: '#10B981',
+            color: '#2563EB',
             '&.Mui-checked': {
-                color: '#10B981',
+                color: '#2563EB',
             },
             '&.Mui-checked + .MuiSwitch-track': {
-                backgroundColor: 'rgba(16, 185, 129, 0.3)',
+                backgroundColor: 'rgba(37, 99, 235, 0.3)',
             },
         },
         '& .MuiSwitch-track': {
@@ -103,14 +103,14 @@ const useStyles = makeStyles()((theme) => ({
         fontFamily: '"Syne", sans-serif',
         fontWeight: 800,
         fontSize: '2.5rem',
-        background: 'linear-gradient(90deg, #10B981 0%, #5EEAD4 100%)',
+        background: 'linear-gradient(90deg, #2563EB 0%, #0891B2 100%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         letterSpacing: '2px',
         lineHeight: 1.2,
     },
     subtitle: {
-        color: '#94a3b8',
+        color: '#94A3B8',
         fontSize: '0.85rem',
         marginTop: theme.spacing(0.5),
         fontWeight: 500,
@@ -119,29 +119,29 @@ const useStyles = makeStyles()((theme) => ({
     },
     textField: {
         '& .MuiOutlinedInput-root': {
-            color: '#f8fafc',
-            backgroundColor: 'rgba(15, 23, 42, 0.4)',
+            color: '#0F172A',
+            backgroundColor: '#FFFFFF',
             borderRadius: '12px',
             '& fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.1)',
+                borderColor: '#E2E8F0',
                 transition: 'border-color 0.3s',
             },
             '&:hover fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.2)',
+                borderColor: 'rgba(226, 232, 240, 0.7)',
             },
             '&.Mui-focused fieldset': {
-                borderColor: '#10B981',
+                borderColor: '#2563EB',
                 borderWidth: '2px',
             },
         },
         '& .MuiInputLabel-root': {
-            color: '#94a3b8',
+            color: '#94A3B8',
             '&.Mui-focused': {
-                color: '#10B981',
+                color: '#2563EB',
             },
         },
         '& .MuiIconButton-root': {
-            color: '#94a3b8',
+            color: '#94A3B8',
         }
     },
     animatedButton: {
@@ -150,7 +150,7 @@ const useStyles = makeStyles()((theme) => ({
         fontSize: '1.05rem',
         fontWeight: 800,
         color: '#fff',
-        background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.9) 0%, rgba(94, 234, 212, 0.7) 100%)',
+        background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(8, 145, 178, 0.7) 100%)',
         border: 'none',
         borderRadius: '12px',
         cursor: 'pointer',
@@ -164,10 +164,10 @@ const useStyles = makeStyles()((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-        boxShadow: '0 0 20px rgba(16, 185, 129, 0.6), 0 0 40px rgba(94, 234, 212, 0.3)',
+        boxShadow: '0 0 20px rgba(37, 99, 235, 0.6), 0 0 40px rgba(8, 145, 178, 0.3)',
         '&:hover': {
-            background: 'linear-gradient(135deg, rgba(16, 185, 129, 1) 0%, rgba(94, 234, 212, 0.85) 100%)',
-            boxShadow: '0 0 30px rgba(16, 185, 129, 0.9), 0 0 60px rgba(94, 234, 212, 0.5), 0 4px 20px rgba(16, 185, 129, 0.4)',
+            background: 'linear-gradient(135deg, rgba(37, 99, 235, 1) 0%, rgba(8, 145, 178, 0.85) 100%)',
+            boxShadow: '0 0 30px rgba(37, 99, 235, 0.9), 0 0 60px rgba(8, 145, 178, 0.5), 0 4px 20px rgba(37, 99, 235, 0.4)',
             transform: 'translateY(-2px)',
             animation: '$pulse 1.5s ease-in-out infinite',
         },
@@ -177,47 +177,47 @@ const useStyles = makeStyles()((theme) => ({
         '&:disabled': {
             opacity: 0.4,
             cursor: 'not-allowed',
-            boxShadow: '0 0 10px rgba(16, 185, 129, 0.2)',
+            boxShadow: '0 0 10px rgba(37, 99, 235, 0.2)',
             animation: 'none',
         },
     },
     '@keyframes pulse': {
         '0%': {
-            boxShadow: '0 0 30px rgba(16, 185, 129, 0.9), 0 0 60px rgba(94, 234, 212, 0.5), 0 4px 20px rgba(16, 185, 129, 0.4)',
+            boxShadow: '0 0 30px rgba(37, 99, 235, 0.9), 0 0 60px rgba(8, 145, 178, 0.5), 0 4px 20px rgba(37, 99, 235, 0.4)',
         },
         '50%': {
-            boxShadow: '0 0 40px rgba(16, 185, 129, 1), 0 0 80px rgba(94, 234, 212, 0.7), 0 4px 25px rgba(16, 185, 129, 0.6)',
+            boxShadow: '0 0 40px rgba(37, 99, 235, 1), 0 0 80px rgba(8, 145, 178, 0.7), 0 4px 25px rgba(37, 99, 235, 0.6)',
         },
         '100%': {
-            boxShadow: '0 0 30px rgba(16, 185, 129, 0.9), 0 0 60px rgba(94, 234, 212, 0.5), 0 4px 20px rgba(16, 185, 129, 0.4)',
+            boxShadow: '0 0 30px rgba(37, 99, 235, 0.9), 0 0 60px rgba(8, 145, 178, 0.5), 0 4px 20px rgba(37, 99, 235, 0.4)',
         },
     },
     selectFormControl: {
         '& .MuiOutlinedInput-root': {
-            color: '#f8fafc',
-            backgroundColor: 'rgba(15, 23, 42, 0.6)',
+            color: '#0F172A',
+            backgroundColor: '#FFFFFF',
             backdropFilter: 'blur(8px)',
             '& fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.1)',
+                borderColor: '#E2E8F0',
             },
             '&:hover fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.2)',
+                borderColor: 'rgba(226, 232, 240, 0.7)',
             },
             '&.Mui-focused fieldset': {
-                borderColor: '#10B981',
+                borderColor: '#2563EB',
             },
         },
         '& .MuiSvgIcon-root': {
-            color: '#94a3b8',
+            color: '#94A3B8',
         }
     },
     iconButton: {
-        color: '#94a3b8',
-        backgroundColor: 'rgba(15, 23, 42, 0.6)',
+        color: '#94A3B8',
+        backgroundColor: '#F1F5F9',
         backdropFilter: 'blur(8px)',
         '&:hover': {
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            color: '#f8fafc',
+            backgroundColor: '#E2E8F0',
+            color: '#0F172A',
         }
     },
     btnText: {
@@ -520,7 +520,7 @@ const AuthPage = () => {
                 )}
 
                 {openIdEnabled && (
-                    <Button onClick={() => handleOpenIdLogin()} variant="outlined" sx={{ backgroundColor: 'transparent', color: '#10B981', border: '1px solid #10B981', '&:hover': { backgroundColor: 'rgba(16, 185, 129, 0.1)' } }}>
+                    <Button onClick={() => handleOpenIdLogin()} variant="outlined" sx={{ backgroundColor: 'transparent', color: '#2563EB', border: '1px solid #2563EB', '&:hover': { backgroundColor: 'rgba(37, 99, 235, 0.1)' } }}>
                         {t('loginOpenId')}
                     </Button>
                 )}

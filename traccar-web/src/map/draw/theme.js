@@ -12,8 +12,8 @@ export default [
       ['!=', 'mode', 'static'],
     ],
     paint: {
-      'fill-color': '#3bb2d0',
-      'fill-outline-color': '#3bb2d0',
+      'fill-color': '#0891B2',
+      'fill-outline-color': '#0891B2',
       'fill-opacity': 0.1,
     },
   },
@@ -22,8 +22,8 @@ export default [
     type: 'fill',
     filter: ['all', ['==', 'active', 'true'], ['==', '$type', 'Polygon']],
     paint: {
-      'fill-color': '#fbb03b',
-      'fill-outline-color': '#fbb03b',
+      'fill-color': '#2563EB',
+      'fill-outline-color': '#2563EB',
       'fill-opacity': 0.1,
     },
   },
@@ -33,7 +33,7 @@ export default [
     filter: ['all', ['==', '$type', 'Point'], ['==', 'meta', 'midpoint']],
     paint: {
       'circle-radius': 3,
-      'circle-color': '#fbb03b',
+      'circle-color': '#2563EB',
     },
   },
   {
@@ -50,7 +50,7 @@ export default [
       'line-join': 'round',
     },
     paint: {
-      'line-color': '#3bb2d0',
+      'line-color': '#0891B2',
       'line-width': 2,
     },
   },
@@ -63,7 +63,7 @@ export default [
       'line-join': 'round',
     },
     paint: {
-      'line-color': '#fbb03b',
+      'line-color': '#2563EB',
       'line-dasharray': [0.2, 2],
       'line-width': 2,
     },
@@ -82,7 +82,7 @@ export default [
       'line-join': 'round',
     },
     paint: {
-      'line-color': '#3bb2d0',
+      'line-color': '#0891B2',
       'line-width': 2,
     },
   },
@@ -95,7 +95,7 @@ export default [
       'line-join': 'round',
     },
     paint: {
-      'line-color': '#fbb03b',
+      'line-color': '#2563EB',
       'line-dasharray': [0.2, 2],
       'line-width': 2,
     },
@@ -115,7 +115,7 @@ export default [
     filter: ['all', ['==', 'meta', 'vertex'], ['==', '$type', 'Point'], ['!=', 'mode', 'static']],
     paint: {
       'circle-radius': 3,
-      'circle-color': '#fbb03b',
+      'circle-color': '#2563EB',
     },
   },
   {
@@ -146,7 +146,7 @@ export default [
     ],
     paint: {
       'circle-radius': 3,
-      'circle-color': '#3bb2d0',
+      'circle-color': '#0891B2',
     },
   },
   {
@@ -164,7 +164,7 @@ export default [
     filter: ['all', ['==', '$type', 'Point'], ['!=', 'meta', 'midpoint'], ['==', 'active', 'true']],
     paint: {
       'circle-radius': 5,
-      'circle-color': '#fbb03b',
+      'circle-color': '#2563EB',
     },
   },
   {
@@ -172,8 +172,8 @@ export default [
     type: 'fill',
     filter: ['all', ['==', 'mode', 'static'], ['==', '$type', 'Polygon']],
     paint: {
-      'fill-color': '#404040',
-      'fill-outline-color': '#404040',
+      'fill-color': '#0F172A',
+      'fill-outline-color': '#0F172A',
       'fill-opacity': 0.1,
     },
   },
@@ -186,7 +186,7 @@ export default [
       'line-join': 'round',
     },
     paint: {
-      'line-color': '#404040',
+      'line-color': '#0F172A',
       'line-width': 2,
     },
   },
@@ -199,7 +199,7 @@ export default [
       'line-join': 'round',
     },
     paint: {
-      'line-color': '#404040',
+      'line-color': '#0F172A',
       'line-width': 2,
     },
   },
@@ -209,7 +209,7 @@ export default [
     filter: ['all', ['==', 'mode', 'static'], ['==', '$type', 'Point']],
     paint: {
       'circle-radius': 5,
-      'circle-color': '#404040',
+      'circle-color': '#0F172A',
     },
   },
 ];

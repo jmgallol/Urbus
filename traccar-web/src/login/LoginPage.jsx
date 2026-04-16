@@ -62,10 +62,10 @@ const useStyles = makeStyles()((theme) => ({
   },
   link: {
     cursor: 'pointer',
-    color: '#94a3b8',
+    color: '#94A3B8',
     transition: 'color 0.2s',
     '&:hover': {
-      color: '#10B981',
+      color: '#2563EB',
     }
   },
   logoContainer: {
@@ -76,14 +76,14 @@ const useStyles = makeStyles()((theme) => ({
     fontFamily: '"Syne", sans-serif',
     fontWeight: 800,
     fontSize: '2.5rem',
-    background: 'linear-gradient(90deg, #10B981 0%, #5EEAD4 100%)',
+    background: 'linear-gradient(90deg, #2563EB 0%, #0891B2 100%)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     letterSpacing: '2px',
     lineHeight: 1.2,
   },
   subtitle: {
-    color: '#94a3b8',
+    color: '#94A3B8',
     fontSize: '0.85rem',
     marginTop: theme.spacing(0.5),
     fontWeight: 500,
@@ -92,78 +92,77 @@ const useStyles = makeStyles()((theme) => ({
   },
   textField: {
     '& .MuiOutlinedInput-root': {
-      color: '#f8fafc',
-      backgroundColor: 'rgba(15, 23, 42, 0.4)',
+      color: '#0F172A',
+      backgroundColor: '#FFFFFF',
       borderRadius: '12px',
       '& fieldset': {
-        borderColor: 'rgba(255, 255, 255, 0.1)',
+        borderColor: '#E2E8F0',
         transition: 'border-color 0.3s',
       },
       '&:hover fieldset': {
-        borderColor: 'rgba(255, 255, 255, 0.2)',
+        borderColor: 'rgba(226, 232, 240, 0.7)',
       },
       '&.Mui-focused fieldset': {
-        borderColor: '#10B981',
+        borderColor: '#2563EB',
         borderWidth: '2px',
       },
     },
     '& .MuiInputLabel-root': {
-      color: '#94a3b8',
+      color: '#94A3B8',
       '&.Mui-focused': {
-        color: '#10B981',
+        color: '#2563EB',
       },
     },
     '& .MuiIconButton-root': {
-      color: '#94a3b8',
+      color: '#94A3B8',
     }
   },
   loginButton: {
     marginTop: theme.spacing(1),
     padding: theme.spacing(1.5),
     borderRadius: '12px',
-    backgroundColor: '#10B981',
-    color: '#020617',
+    backgroundColor: '#2563EB',
+    color: '#FFFFFF',
     fontWeight: 700,
     fontSize: '1rem',
     textTransform: 'none',
-    boxShadow: '0 4px 14px 0 rgba(16, 185, 129, 0.39)',
+    boxShadow: '0 2px 8px rgba(37, 99, 235, 0.3)',
     transition: 'transform 0.2s, box-shadow 0.2s, background-color 0.2s',
     '&:hover': {
-      backgroundColor: '#059669',
-      boxShadow: '0 6px 20px rgba(16, 185, 129, 0.5)',
+      backgroundColor: '#1D4ED8',
+      boxShadow: '0 4px 12px rgba(37, 99, 235, 0.4)',
       transform: 'translateY(-2px)',
     },
     '&:disabled': {
-      backgroundColor: 'rgba(16, 185, 129, 0.5)',
-      color: 'rgba(2, 6, 23, 0.5)',
+      backgroundColor: 'rgba(37, 99, 235, 0.5)',
+      color: 'rgba(15, 23, 42, 0.5)',
     }
   },
   selectFormControl: {
     '& .MuiOutlinedInput-root': {
-      color: '#f8fafc',
-      backgroundColor: 'rgba(15, 23, 42, 0.6)',
-      backdropFilter: 'blur(8px)',
+      color: '#0F172A',
+      backgroundColor: '#FFFFFF',
+      borderRadius: '12px',
       '& fieldset': {
-        borderColor: 'rgba(255, 255, 255, 0.1)',
+        borderColor: '#E2E8F0',
       },
       '&:hover fieldset': {
-        borderColor: 'rgba(255, 255, 255, 0.2)',
+        borderColor: 'rgba(226, 232, 240, 0.7)',
       },
       '&.Mui-focused fieldset': {
-        borderColor: '#10B981',
+        borderColor: '#2563EB',
       },
     },
     '& .MuiSvgIcon-root': {
-      color: '#94a3b8',
+      color: '#94A3B8',
     }
   },
   iconButton: {
-    color: '#94a3b8',
-    backgroundColor: 'rgba(15, 23, 42, 0.6)',
-    backdropFilter: 'blur(8px)',
+    color: '#94A3B8',
+    backgroundColor: '#F1F5F9',
     '&:hover': {
-      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-      color: '#f8fafc',
+      backgroundColor: '#E2E8F0',
+      color: '#0F172A',
     }
   },
   animatedButton: {
@@ -172,8 +171,8 @@ const useStyles = makeStyles()((theme) => ({
     fontSize: '1rem',
     fontWeight: 700,
     color: '#fff',
-    background: 'rgba(0, 0, 0, 0.6)',
-    border: 'none',
+    background: 'rgba(37, 99, 235, 0.1)',
+    border: '1px solid rgba(37, 99, 235, 0.3)',
     borderRadius: '10px',
     cursor: 'pointer',
     overflow: 'hidden',
@@ -186,7 +185,8 @@ const useStyles = makeStyles()((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     '&:hover': {
-      background: 'rgba(0, 0, 0, 0.8)',
+      background: 'rgba(37, 99, 235, 0.15)',
+      borderColor: '#2563EB',
     },
     '&:disabled': {
       opacity: 0.5,
@@ -197,9 +197,9 @@ const useStyles = makeStyles()((theme) => ({
     padding: '8px 24px',
     fontSize: '0.85rem',
     fontWeight: 500,
-    color: '#94a3b8',
+    color: '#94A3B8',
     background: 'transparent',
-    border: '1px solid rgba(16, 185, 129, 0.3)',
+    border: '1px solid rgba(37, 99, 235, 0.3)',
     borderRadius: '8px',
     cursor: 'pointer',
     textTransform: 'uppercase',
@@ -211,9 +211,9 @@ const useStyles = makeStyles()((theme) => ({
     margin: `${theme.spacing(1.5)} auto 0`,
     transition: 'all 0.3s ease',
     '&:hover': {
-      borderColor: '#10B981',
-      color: '#10B981',
-      backgroundColor: 'rgba(16, 185, 129, 0.05)',
+      borderColor: '#2563EB',
+      color: '#2563EB',
+      backgroundColor: 'rgba(37, 99, 235, 0.05)',
     },
   },
   borderTop: {
@@ -222,10 +222,10 @@ const useStyles = makeStyles()((theme) => ({
     left: 0,
     width: '100%',
     height: '3px',
-    background: 'linear-gradient(90deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    background: 'linear-gradient(90deg, transparent 0%, #2563EB 20%, #0891B2 50%, #2563EB 80%, transparent 100%)',
     animation: '$slideRight 2s linear infinite',
     borderRadius: '10px 10px 0 0',
-    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    boxShadow: '0 0 10px rgba(37, 99, 235, 0.6)',
     backgroundSize: '200% 100%',
   },
   borderRight: {
@@ -234,10 +234,10 @@ const useStyles = makeStyles()((theme) => ({
     right: 0,
     width: '3px',
     height: '100%',
-    background: 'linear-gradient(180deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    background: 'linear-gradient(180deg, transparent 0%, #2563EB 20%, #0891B2 50%, #2563EB 80%, transparent 100%)',
     animation: '$slideDown 2s linear infinite 0.5s',
     borderRadius: '0 10px 10px 0',
-    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    boxShadow: '0 0 10px rgba(37, 99, 235, 0.6)',
     backgroundSize: '100% 200%',
   },
   borderBottom: {
@@ -246,10 +246,10 @@ const useStyles = makeStyles()((theme) => ({
     right: 0,
     width: '100%',
     height: '3px',
-    background: 'linear-gradient(270deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    background: 'linear-gradient(270deg, transparent 0%, #2563EB 20%, #0891B2 50%, #2563EB 80%, transparent 100%)',
     animation: '$slideLeft 2s linear infinite 1s',
     borderRadius: '0 0 10px 10px',
-    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    boxShadow: '0 0 10px rgba(37, 99, 235, 0.6)',
     backgroundSize: '200% 100%',
   },
   borderLeft: {
@@ -258,10 +258,10 @@ const useStyles = makeStyles()((theme) => ({
     left: 0,
     width: '3px',
     height: '100%',
-    background: 'linear-gradient(360deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    background: 'linear-gradient(360deg, transparent 0%, #2563EB 20%, #0891B2 50%, #2563EB 80%, transparent 100%)',
     animation: '$slideUp 2s linear infinite 1.5s',
     borderRadius: '10px 0 0 10px',
-    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    boxShadow: '0 0 10px rgba(37, 99, 235, 0.6)',
     backgroundSize: '100% 200%',
   },
   btnText: {
@@ -514,7 +514,7 @@ const LoginPage = () => {
           </>
         )}
         {openIdEnabled && (
-          <Button onClick={() => handleOpenIdLogin()} variant="outlined" className={classes.loginButton} sx={{ backgroundColor: 'transparent', color: '#10B981', border: '1px solid #10B981', '&:hover': { backgroundColor: 'rgba(16, 185, 129, 0.1)' } }}>
+          <Button onClick={() => handleOpenIdLogin()} variant="outlined" className={classes.loginButton} sx={{ backgroundColor: 'transparent', color: '#2563EB', border: '1px solid #2563EB', '&:hover': { backgroundColor: 'rgba(37, 99, 235, 0.1)' } }}>
             {t('loginOpenId')}
           </Button>
         )}
