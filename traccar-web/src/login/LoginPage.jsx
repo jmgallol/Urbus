@@ -134,8 +134,8 @@ const useStyles = makeStyles()((theme) => ({
       transform: 'translateY(-2px)',
     },
     '&:disabled': {
-       backgroundColor: 'rgba(16, 185, 129, 0.5)',
-       color: 'rgba(2, 6, 23, 0.5)',
+      backgroundColor: 'rgba(16, 185, 129, 0.5)',
+      color: 'rgba(2, 6, 23, 0.5)',
     }
   },
   selectFormControl: {
@@ -165,7 +165,141 @@ const useStyles = makeStyles()((theme) => ({
       backgroundColor: 'rgba(255, 255, 255, 0.1)',
       color: '#f8fafc',
     }
-  }
+  },
+  animatedButton: {
+    position: 'relative',
+    padding: '12px 40px',
+    fontSize: '1rem',
+    fontWeight: 700,
+    color: '#fff',
+    background: 'rgba(0, 0, 0, 0.6)',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    overflow: 'hidden',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    width: '100%',
+    marginTop: theme.spacing(1),
+    fontFamily: 'inherit',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    '&:hover': {
+      background: 'rgba(0, 0, 0, 0.8)',
+    },
+    '&:disabled': {
+      opacity: 0.5,
+      cursor: 'not-allowed',
+    },
+  },
+  registerButton: {
+    padding: '8px 24px',
+    fontSize: '0.85rem',
+    fontWeight: 500,
+    color: '#94a3b8',
+    background: 'transparent',
+    border: '1px solid rgba(16, 185, 129, 0.3)',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+    width: 'auto',
+    marginTop: theme.spacing(1.5),
+    fontFamily: 'inherit',
+    display: 'block',
+    margin: `${theme.spacing(1.5)} auto 0`,
+    transition: 'all 0.3s ease',
+    '&:hover': {
+      borderColor: '#10B981',
+      color: '#10B981',
+      backgroundColor: 'rgba(16, 185, 129, 0.05)',
+    },
+  },
+  borderTop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '3px',
+    background: 'linear-gradient(90deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    animation: '$slideRight 2s linear infinite',
+    borderRadius: '10px 10px 0 0',
+    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    backgroundSize: '200% 100%',
+  },
+  borderRight: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: '3px',
+    height: '100%',
+    background: 'linear-gradient(180deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    animation: '$slideDown 2s linear infinite 0.5s',
+    borderRadius: '0 10px 10px 0',
+    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    backgroundSize: '100% 200%',
+  },
+  borderBottom: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    width: '100%',
+    height: '3px',
+    background: 'linear-gradient(270deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    animation: '$slideLeft 2s linear infinite 1s',
+    borderRadius: '0 0 10px 10px',
+    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    backgroundSize: '200% 100%',
+  },
+  borderLeft: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    width: '3px',
+    height: '100%',
+    background: 'linear-gradient(360deg, transparent 0%, #10B981 20%, #5EEAD4 50%, #10B981 80%, transparent 100%)',
+    animation: '$slideUp 2s linear infinite 1.5s',
+    borderRadius: '10px 0 0 10px',
+    boxShadow: '0 0 10px rgba(16, 185, 129, 0.8)',
+    backgroundSize: '100% 200%',
+  },
+  btnText: {
+    position: 'relative',
+    zIndex: 10,
+  },
+  '@keyframes slideRight': {
+    '0%': {
+      backgroundPosition: '-200% 0',
+    },
+    '100%': {
+      backgroundPosition: '200% 0',
+    },
+  },
+  '@keyframes slideDown': {
+    '0%': {
+      backgroundPosition: '0 -200%',
+    },
+    '100%': {
+      backgroundPosition: '0 200%',
+    },
+  },
+  '@keyframes slideLeft': {
+    '0%': {
+      backgroundPosition: '200% 0',
+    },
+    '100%': {
+      backgroundPosition: '-200% 0',
+    },
+  },
+  '@keyframes slideUp': {
+    '0%': {
+      backgroundPosition: '0 200%',
+    },
+    '100%': {
+      backgroundPosition: '0 -200%',
+    },
+  },
 }));
 
 const LoginPage = () => {
@@ -299,10 +433,10 @@ const LoginPage = () => {
           <>
             <Box className={classes.logoContainer}>
               <Typography className={classes.logoText} component="h1">
-                 URBUS
+                URBUS
               </Typography>
               <Typography className={classes.subtitle}>
-                 Fleet Intelligence
+                {t('appSubtitle')}
               </Typography>
             </Box>
             <TextField
@@ -314,7 +448,7 @@ const LoginPage = () => {
               autoComplete="email"
               autoFocus={!email}
               onChange={(e) => setEmail(e.target.value)}
-              helperText={failed && 'Invalid username or password'}
+              helperText={failed && t('loginInvalidCredentials')}
               className={classes.textField}
             />
             <TextField
@@ -356,20 +490,31 @@ const LoginPage = () => {
                 className={classes.textField}
               />
             )}
-            <Button
+            <button
               onClick={handlePasswordLogin}
               type="submit"
-              variant="contained"
-              size="large"
+              className={classes.animatedButton}
               disabled={!email || !password || (codeEnabled && !code)}
-              className={classes.loginButton}
             >
-              {t('loginLogin')}
-            </Button>
+              <span className={classes.borderTop} />
+              <span className={classes.borderRight} />
+              <span className={classes.borderBottom} />
+              <span className={classes.borderLeft} />
+              <span className={classes.btnText}>{t('loginLogin')}</span>
+            </button>
+            {!openIdForced && (
+              <button
+                onClick={() => navigate('/register')}
+                type="button"
+                className={classes.registerButton}
+              >
+                {t('loginRegister')}
+              </button>
+            )}
           </>
         )}
         {openIdEnabled && (
-          <Button onClick={() => handleOpenIdLogin()} variant="outlined" className={classes.loginButton} sx={{ backgroundColor: 'transparent', color: '#10B981', border: '1px solid #10B981', '&:hover': { backgroundColor: 'rgba(16, 185, 129, 0.1)' }}}>
+          <Button onClick={() => handleOpenIdLogin()} variant="outlined" className={classes.loginButton} sx={{ backgroundColor: 'transparent', color: '#10B981', border: '1px solid #10B981', '&:hover': { backgroundColor: 'rgba(16, 185, 129, 0.1)' } }}>
             {t('loginOpenId')}
           </Button>
         )}

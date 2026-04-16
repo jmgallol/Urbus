@@ -67,15 +67,15 @@ const useStyles = makeStyles()((theme) => ({
     '&:hover': {
       color: '#10B981',
       backgroundColor: 'rgba(16, 185, 129, 0.1)',
-    }
+    },
   },
   iconButtonActive: {
     color: '#10B981',
     backgroundColor: 'rgba(16, 185, 129, 0.15)',
     '&:hover': {
       backgroundColor: 'rgba(16, 185, 129, 0.25)',
-    }
-  }
+    },
+  },
 }));
 
 const MainToolbar = ({
@@ -111,14 +111,14 @@ const MainToolbar = ({
 
   return (
     <Toolbar ref={toolbarRef} className={classes.toolbar} disableGutters>
-      <IconButton 
-        edge="start" 
+      <IconButton
+        edge="start"
         onClick={() => setDevicesOpen(!devicesOpen)}
         className={devicesOpen ? classes.iconButtonActive : classes.iconButton}
       >
         {devicesOpen ? <MapIcon /> : <DnsIcon />}
       </IconButton>
-      
+
       <OutlinedInput
         ref={inputRef}
         placeholder={t('sharedSearchDevices')}
@@ -129,9 +129,9 @@ const MainToolbar = ({
         className={classes.input}
         endAdornment={
           <InputAdornment position="end">
-            <IconButton 
-              size="small" 
-              edge="end" 
+            <IconButton
+              size="small"
+              edge="end"
               onClick={() => setFilterAnchorEl(inputRef.current)}
               className={classes.iconButton}
             >
@@ -161,7 +161,7 @@ const MainToolbar = ({
         marginThreshold={0}
         slotProps={{
           paper: {
-            style: { 
+            style: {
               width: `calc(${toolbarRef.current?.clientWidth}px - ${theme.spacing(4)})`,
               backgroundColor: '#0f172a',
               borderRadius: '12px',
@@ -178,7 +178,10 @@ const MainToolbar = ({
         ))}
         {filteredDevices.length > 3 && (
           <ListItemButton alignItems="center" onClick={() => setDevicesOpen(true)}>
-            <ListItemText primary={t('notificationAlways')} style={{ textAlign: 'center', color: '#10B981' }} />
+            <ListItemText
+              primary={t('notificationAlways')}
+              style={{ textAlign: 'center', color: '#10B981' }}
+            />
           </ListItemButton>
         )}
       </Popover>
@@ -196,8 +199,8 @@ const MainToolbar = ({
             style: {
               backgroundColor: '#0f172a',
               borderRadius: '16px',
-            }
-          }
+            },
+          },
         }}
       >
         <div className={classes.filterPanel}>
@@ -247,10 +250,10 @@ const MainToolbar = ({
           <FormGroup>
             <FormControlLabel
               control={
-                <Checkbox 
-                   checked={filterMap} 
-                   onChange={(e) => setFilterMap(e.target.checked)} 
-                   sx={{ color: '#10B981', '&.Mui-checked': { color: '#10B981' } }}
+                <Checkbox
+                  checked={filterMap}
+                  onChange={(e) => setFilterMap(e.target.checked)}
+                  sx={{ color: '#10B981', '&.Mui-checked': { color: '#10B981' } }}
                 />
               }
               label={t('sharedFilterMap')}
@@ -259,9 +262,9 @@ const MainToolbar = ({
         </div>
       </Popover>
 
-      <IconButton 
-        edge="end" 
-        onClick={() => navigate('/settings/device')} 
+      <IconButton
+        edge="end"
+        onClick={() => navigate('/settings/device')}
         disabled={deviceReadonly}
         className={classes.iconButton}
       >

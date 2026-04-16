@@ -178,7 +178,7 @@
     "errorConnection": "Error en la conexión",
     "errorSocket": "Error del Web-Socket",
     "errorZero": "No puede ser cero",
-    "userEmail": "Email",
+    "userEmail": "Correo Electrónico",
     "userPassword": "Contraseña",
     "userAdmin": "Administrador",
     "userRemember": "Recordar",
@@ -629,5 +629,7 @@
     "categoryVan": "Furgoneta",
     "categoryScooter": "Moto",
     "maintenanceStart": "Iniciar",
-    "maintenancePeriod": "Período"
+    "maintenancePeriod": "Período",
+    "appSubtitle": "Inteligencia de Flota",
+    "loginInvalidCredentials": "Email o contraseña incorrecto"
 }

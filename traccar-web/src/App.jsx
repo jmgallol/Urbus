@@ -55,7 +55,7 @@ const App = () => {
         dispatch(sessionActions.updateUser(await response.json()));
       } else {
         window.sessionStorage.setItem('postLogin', pathname + search);
-        navigate(newServer ? '/register' : '/login', { replace: true });
+        navigate('/login', { replace: true });
       }
     }
     return null;

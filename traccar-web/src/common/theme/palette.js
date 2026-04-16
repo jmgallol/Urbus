@@ -9,12 +9,10 @@ export default (server) => ({
     paper: 'rgba(15, 23, 42, 0.7)', // Translucent glassmorphism base
   },
   primary: {
-    main:
-      validatedColor(server?.attributes?.colorPrimary) || '#10B981', // URBUS Neon Emerald
+    main: validatedColor(server?.attributes?.colorPrimary) || '#10B981', // URBUS Neon Emerald
   },
   secondary: {
-    main:
-      validatedColor(server?.attributes?.colorSecondary) || '#5EEAD4', // URBUS Cyan
+    main: validatedColor(server?.attributes?.colorSecondary) || '#5EEAD4', // URBUS Cyan
   },
   error: { main: '#EF4444' },
   warning: { main: '#F97316' },

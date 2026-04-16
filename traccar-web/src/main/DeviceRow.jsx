@@ -58,7 +58,7 @@ const useStyles = makeStyles()((theme) => ({
       borderColor: 'rgba(16, 185, 129, 0.4)', // Emerald glowing hint
       boxShadow: '0 4px 20px rgba(16, 185, 129, 0.1)',
       transform: 'translateY(-1px)',
-    }
+    },
   },
   selectedCard: {
     backgroundColor: 'rgba(16, 185, 129, 0.1)', // Emerald tint base
@@ -67,7 +67,7 @@ const useStyles = makeStyles()((theme) => ({
     '&:hover': {
       backgroundColor: 'rgba(16, 185, 129, 0.15)',
       borderColor: '#10B981',
-    }
+    },
   },
   avatar: {
     backgroundColor: 'rgba(15, 23, 42, 0.8)',
@@ -107,7 +107,7 @@ const useStyles = makeStyles()((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     gap: '2px', // Tighter spacing for modern look
-  }
+  },
 }));
 
 const DeviceRow = ({ devices, index, style }) => {
