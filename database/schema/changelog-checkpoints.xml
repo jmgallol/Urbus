@@ -1,0 +1,65 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd"
+  logicalFilePath="changelog-checkpoints">
+
+  <changeSet author="urbus" id="changelog-checkpoints-1">
+
+    <createTable tableName="tc_checkpoints">
+      <column name="id" type="BIGINT" autoIncrement="true">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="groupId" type="BIGINT">
+        <constraints nullable="true" />
+      </column>
+      <column name="name" type="VARCHAR(128)">
+        <constraints nullable="false" />
+      </column>
+      <column name="description" type="VARCHAR(512)" />
+      <column name="latitude" type="DECIMAL(18,6)">
+        <constraints nullable="false" />
+      </column>
+      <column name="longitude" type="DECIMAL(18,6)">
+        <constraints nullable="false" />
+      </column>
+      <column name="radius" type="INT">
+        <constraints nullable="false" />
+      </column>
+      <column name="attributes" type="VARCHAR(4000)" />
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_checkpoints" baseColumnNames="groupId" constraintName="fk_checkpoint_group_groupid" referencedTableName="tc_groups" referencedColumnNames="id" onDelete="SET NULL" />
+    <createIndex tableName="tc_checkpoints" indexName="idx_checkpoint_groupid">
+      <column name="groupId" />
+    </createIndex>
+
+    <createTable tableName="tc_user_checkpoint">
+      <column name="userid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="checkpointid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_user_checkpoint" baseColumnNames="userid" constraintName="fk_user_checkpoint_userid" referencedTableName="tc_users" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_user_checkpoint" baseColumnNames="checkpointid" constraintName="fk_user_checkpoint_checkpointid" referencedTableName="tc_checkpoints" referencedColumnNames="id" onDelete="CASCADE" />
+
+    <createTable tableName="tc_group_checkpoint">
+      <column name="groupid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="checkpointid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_group_checkpoint" baseColumnNames="groupid" constraintName="fk_group_checkpoint_groupid" referencedTableName="tc_groups" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_group_checkpoint" baseColumnNames="checkpointid" constraintName="fk_group_checkpoint_checkpointid" referencedTableName="tc_checkpoints" referencedColumnNames="id" onDelete="CASCADE" />
+
+  </changeSet>
+
+</databaseChangeLog>

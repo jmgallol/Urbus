@@ -504,7 +504,7 @@ public final class Keys {
     public static final ConfigKey<String> DATABASE_CHANGELOG = new StringConfigKey(
             "database.changelog",
             List.of(KeyType.CONFIG),
-            "./schema/changelog-master.xml");
+            "./database/schema/changelog-master.xml");
 
     /**
      * Database connection pool size. Default value is defined by the HikariCP library.

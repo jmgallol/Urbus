@@ -1,0 +1,139 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd"
+  logicalFilePath="changelog-routes">
+
+  <changeSet author="urbus" id="changelog-routes-1">
+
+    <!-- Routes table -->
+    <createTable tableName="tc_routes">
+      <column name="id" type="BIGINT" autoIncrement="true">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="groupId" type="BIGINT">
+        <constraints nullable="true" />
+      </column>
+      <column name="name" type="VARCHAR(128)">
+        <constraints nullable="false" />
+      </column>
+      <column name="description" type="VARCHAR(512)" />
+      <column name="active" type="BOOLEAN" defaultValue="true">
+        <constraints nullable="false" />
+      </column>
+      <column name="attributes" type="VARCHAR(4000)" />
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_routes" baseColumnNames="groupId" constraintName="fk_route_group_groupid" referencedTableName="tc_groups" referencedColumnNames="id" onDelete="SET NULL" />
+    <createIndex tableName="tc_routes" indexName="idx_route_groupid">
+      <column name="groupId" />
+    </createIndex>
+    <createIndex tableName="tc_routes" indexName="idx_route_active">
+      <column name="active" />
+    </createIndex>
+
+    <!-- Route permissions for users -->
+    <createTable tableName="tc_user_route">
+      <column name="userid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="routeid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_user_route" baseColumnNames="userid" constraintName="fk_user_route_userid" referencedTableName="tc_users" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_user_route" baseColumnNames="routeid" constraintName="fk_user_route_routeid" referencedTableName="tc_routes" referencedColumnNames="id" onDelete="CASCADE" />
+
+    <!-- Route permissions for groups -->
+    <createTable tableName="tc_group_route">
+      <column name="groupid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="routeid" type="BIGINT">
+        <constraints primaryKey="true" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_group_route" baseColumnNames="groupid" constraintName="fk_group_route_groupid" referencedTableName="tc_groups" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_group_route" baseColumnNames="routeid" constraintName="fk_group_route_routeid" referencedTableName="tc_routes" referencedColumnNames="id" onDelete="CASCADE" />
+
+  </changeSet>
+
+  <changeSet author="urbus" id="changelog-routes-2">
+
+    <!-- Route to checkpoint mapping with ordering -->
+    <createTable tableName="tc_route_checkpoint">
+      <column name="id" type="BIGINT" autoIncrement="true">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="routeId" type="BIGINT">
+        <constraints nullable="false" />
+      </column>
+      <column name="checkpointId" type="BIGINT">
+        <constraints nullable="false" />
+      </column>
+      <column name="sequence" type="INT">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_route_checkpoint" baseColumnNames="routeId" constraintName="fk_route_checkpoint_routeid" referencedTableName="tc_routes" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_route_checkpoint" baseColumnNames="checkpointId" constraintName="fk_route_checkpoint_checkpointid" referencedTableName="tc_checkpoints" referencedColumnNames="id" onDelete="CASCADE" />
+
+    <createIndex tableName="tc_route_checkpoint" indexName="idx_route_checkpoint_routeid">
+      <column name="routeId" />
+    </createIndex>
+    <createIndex tableName="tc_route_checkpoint" indexName="idx_route_checkpoint_checkpointid">
+      <column name="checkpointId" />
+    </createIndex>
+    <createIndex tableName="tc_route_checkpoint" indexName="idx_route_checkpoint_sequence">
+      <column name="routeId" />
+      <column name="sequence" />
+    </createIndex>
+
+  </changeSet>
+
+  <changeSet author="urbus" id="changelog-routes-3">
+
+    <!-- Device to route assignment -->
+    <createTable tableName="tc_device_route">
+      <column name="id" type="BIGINT" autoIncrement="true">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="deviceId" type="BIGINT">
+        <constraints nullable="false" />
+      </column>
+      <column name="routeId" type="BIGINT">
+        <constraints nullable="false" />
+      </column>
+      <column name="assignedAt" type="TIMESTAMP">
+        <constraints nullable="false" />
+      </column>
+      <column name="currentCheckpointId" type="BIGINT">
+        <constraints nullable="true" />
+      </column>
+      <column name="completedRoute" type="BOOLEAN" defaultValue="false">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_device_route" baseColumnNames="deviceId" constraintName="fk_device_route_deviceid" referencedTableName="tc_devices" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_device_route" baseColumnNames="routeId" constraintName="fk_device_route_routeid" referencedTableName="tc_routes" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_device_route" baseColumnNames="currentCheckpointId" constraintName="fk_device_route_checkpointid" referencedTableName="tc_checkpoints" referencedColumnNames="id" onDelete="SET NULL" />
+
+    <createIndex tableName="tc_device_route" indexName="idx_device_route_deviceid">
+      <column name="deviceId" />
+    </createIndex>
+    <createIndex tableName="tc_device_route" indexName="idx_device_route_routeid">
+      <column name="routeId" />
+    </createIndex>
+    <createIndex tableName="tc_device_route" indexName="idx_device_route_completed">
+      <column name="completedRoute" />
+    </createIndex>
+
+  </changeSet>
+
+</databaseChangeLog>
