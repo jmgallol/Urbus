@@ -114,11 +114,13 @@ public class UserResource extends BaseObjectResource<User> {
                     }
                 }
             } else {
-                if (UserUtil.isEmpty(storage)) {
+                // Allow registration for unauthenticated users (everyone)
+                // First user becomes admin automatically
+                long userCount = storage.getObjects(baseClass, new Request(new Columns.All())).size();
+                if (userCount == 0) {
                     entity.setAdministrator(true);
-                } else if (!permissionsService.getServer().getRegistration()) {
-                    throw new SecurityException("Registration disabled");
                 }
+                
                 if (permissionsService.getServer().getBoolean(Keys.WEB_TOTP_FORCE.getKey())
                         && entity.getTotpKey() == null) {
                     throw new SecurityException("One-time password key is required");

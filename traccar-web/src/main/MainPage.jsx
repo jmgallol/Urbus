@@ -10,6 +10,7 @@ import StatusCard from '../common/components/StatusCard';
 import { devicesActions } from '../store';
 import usePersistedState from '../common/util/usePersistedState';
 import EventsDrawer from './EventsDrawer';
+import CheckpointsDrawer from './CheckpointsDrawer';
 import useFilter from './useFilter';
 import MainToolbar from './MainToolbar';
 import MainMap from './MainMap';
@@ -121,8 +122,17 @@ const MainPage = () => {
 
   const [devicesOpen, setDevicesOpen] = useState(desktop);
   const [eventsOpen, setEventsOpen] = useState(false);
+  const [checkpointsOpen, setCheckpointsOpen] = useState(false);
+  const [editingCheckpoint, setEditingCheckpoint] = useState(null);
+  const [checkpointFormOpen, setCheckpointFormOpen] = useState(false);
 
   const onEventsClick = useCallback(() => setEventsOpen(true), [setEventsOpen]);
+
+  const handleEditCheckpoint = useCallback((checkpoint) => {
+    setEditingCheckpoint(checkpoint);
+    setCheckpointFormOpen(true);
+    setCheckpointsOpen(false); // Cerrar drawer cuando se abre el formulario
+  }, []);
 
   useEffect(() => {
     if (!desktop && mapOnSelect && selectedDeviceId) {
@@ -148,6 +158,10 @@ const MainPage = () => {
           filteredPositions={filteredPositions}
           selectedPosition={selectedPosition}
           onEventsClick={onEventsClick}
+          checkpointFormOpen={checkpointFormOpen}
+          setCheckpointFormOpen={setCheckpointFormOpen}
+          editingCheckpoint={editingCheckpoint}
+          setEditingCheckpoint={setEditingCheckpoint}
         />
       </div>
 
@@ -165,6 +179,10 @@ const MainPage = () => {
             setFilterSort={setFilterSort}
             filterMap={filterMap}
             setFilterMap={setFilterMap}
+            checkpointFormOpen={checkpointFormOpen}
+            setCheckpointFormOpen={setCheckpointFormOpen}
+            checkpointsOpen={checkpointsOpen}
+            setCheckpointsOpen={setCheckpointsOpen}
           />
         </Paper>
         <div className={classes.middle}>
@@ -183,6 +201,11 @@ const MainPage = () => {
         )}
       </div>
       <EventsDrawer open={eventsOpen} onClose={() => setEventsOpen(false)} />
+      <CheckpointsDrawer
+        open={checkpointsOpen}
+        onClose={() => setCheckpointsOpen(false)}
+        onEditCheckpoint={handleEditCheckpoint}
+      />
       {selectedDeviceId && (
         <StatusCard
           deviceId={selectedDeviceId}

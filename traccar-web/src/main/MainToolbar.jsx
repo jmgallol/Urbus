@@ -24,6 +24,8 @@ import { useTheme } from '@mui/material/styles';
 import MapIcon from '@mui/icons-material/Map';
 import DnsIcon from '@mui/icons-material/Dns';
 import AddIcon from '@mui/icons-material/Add';
+import AddLocationIcon from '@mui/icons-material/AddLocation';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import TuneIcon from '@mui/icons-material/Tune';
 import { useTranslation } from '../common/components/LocalizationProvider';
 import { useDeviceReadonly } from '../common/util/permissions';
@@ -90,6 +92,10 @@ const MainToolbar = ({
   setFilterSort,
   filterMap,
   setFilterMap,
+  checkpointFormOpen,
+  setCheckpointFormOpen,
+  checkpointsOpen,
+  setCheckpointsOpen,
 }) => {
   const { classes } = useStyles();
   const theme = useTheme();
@@ -261,6 +267,26 @@ const MainToolbar = ({
           </FormGroup>
         </div>
       </Popover>
+
+      <IconButton
+        edge="end"
+        onClick={() => setCheckpointFormOpen(true)}
+        className={classes.iconButton}
+      >
+        <Tooltip title="Agregar Checkpoint" arrow>
+          <AddLocationIcon />
+        </Tooltip>
+      </IconButton>
+
+      <IconButton
+        edge="end"
+        onClick={() => setCheckpointsOpen(!checkpointsOpen)}
+        className={checkpointsOpen ? classes.iconButtonActive : classes.iconButton}
+      >
+        <Tooltip title="Ver Checkpoints" arrow>
+          <LocationOnIcon />
+        </Tooltip>
+      </IconButton>
 
       <IconButton
         edge="end"

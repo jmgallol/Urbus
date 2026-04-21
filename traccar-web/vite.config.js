@@ -6,7 +6,8 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig(() => ({
   server: {
-    port: 3000,
+    port: 3001,
+    allowedHosts: ['arrive-legible-reexamine.ngrok-free.dev'],
     proxy: {
       '/api/socket': 'ws://localhost:8082',
       '/api': 'http://localhost:8082',

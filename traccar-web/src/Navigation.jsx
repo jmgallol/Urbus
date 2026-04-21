@@ -24,6 +24,8 @@ import DriversPage from './settings/DriversPage';
 import DriverPage from './settings/DriverPage';
 import CalendarsPage from './settings/CalendarsPage';
 import CalendarPage from './settings/CalendarPage';
+import RoutesPage from './settings/RoutesPage';
+import RoutePage from './settings/RoutePage';
 import ComputedAttributesPage from './settings/ComputedAttributesPage';
 import ComputedAttributePage from './settings/ComputedAttributePage';
 import MaintenancesPage from './settings/MaintenancesPage';
@@ -48,6 +50,7 @@ import DevicesPage from './settings/DevicesPage';
 import ScheduledPage from './reports/ScheduledPage';
 import DeviceConnectionsPage from './settings/DeviceConnectionsPage';
 import GroupConnectionsPage from './settings/GroupConnectionsPage';
+import RoutesReportPage from './reports/RoutesReportPage';
 import UserConnectionsPage from './settings/UserConnectionsPage';
 import LogsPage from './reports/LogsPage';
 import SharePage from './settings/SharePage';
@@ -131,6 +134,9 @@ const Navigation = () => {
           <Route path="calendars" element={<CalendarsPage />} />
           <Route path="calendar/:id" element={<CalendarPage />} />
           <Route path="calendar" element={<CalendarPage />} />
+          <Route path="routes" element={<RoutesPage />} />
+          <Route path="route/:id" element={<RoutePage />} />
+          <Route path="route" element={<RoutePage />} />
           <Route path="commands" element={<CommandsPage />} />
           <Route path="command/:id" element={<CommandPage />} />
           <Route path="command" element={<CommandPage />} />
@@ -173,6 +179,7 @@ const Navigation = () => {
           <Route path="events" element={<EventReportPage />} />
           <Route path="geofences" element={<GeofenceReportPage />} />
           <Route path="route" element={<PositionsReportPage />} />
+          <Route path="routes" element={<RoutesReportPage />} />
           <Route path="stops" element={<StopReportPage />} />
           <Route path="summary" element={<SummaryReportPage />} />
           <Route path="trips" element={<TripReportPage />} />

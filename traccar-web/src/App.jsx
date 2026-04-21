@@ -1,6 +1,7 @@
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useMediaQuery, useTheme } from '@mui/material';
+import { useState, useCallback, useEffect } from 'react';
 import { makeStyles } from 'tss-react/mui';
 import BottomMenu from './common/components/BottomMenu';
 import SocketController from './SocketController';
@@ -12,6 +13,9 @@ import MotionController from './main/MotionController';
 import TermsDialog from './common/components/TermsDialog';
 import Loader from './common/components/Loader';
 import fetchOrThrow from './common/util/fetchOrThrow';
+import CheckpointNotification from './common/components/CheckpointNotification';
+import useCheckpointDetection from './common/hooks/useCheckpointDetection';
+import { fetchCheckpoints } from './store/checkpoints';
 
 const useStyles = makeStyles()(() => ({
   page: {
@@ -38,6 +42,27 @@ const App = () => {
   const newServer = useSelector((state) => state.session.server.newServer);
   const termsUrl = useSelector((state) => state.session.server.attributes.termsUrl);
   const user = useSelector((state) => state.session.user);
+
+  const [notificationCheckpoint, setNotificationCheckpoint] = useState(null);
+  const [notificationDevice, setNotificationDevice] = useState(null);
+  const [showNotification, setShowNotification] = useState(false);
+
+  const handleCheckpointArrival = useCallback((checkpoint, device) => {
+    setNotificationCheckpoint(checkpoint);
+    setNotificationDevice(device);
+    setShowNotification(true);
+  }, []);
+
+  useCheckpointDetection({
+    onArrival: handleCheckpointArrival,
+  });
+
+  // Load checkpoints from API when user is authenticated
+  useEffect(() => {
+    if (user) {
+      dispatch(fetchCheckpoints());
+    }
+  }, [user, dispatch]);
 
   const acceptTerms = useCatch(async () => {
     const response = await fetchOrThrow(`/api/users/${user.id}`, {
@@ -73,6 +98,12 @@ const App = () => {
       <CachingController />
       <UpdateController />
       <MotionController />
+      <CheckpointNotification
+        open={showNotification}
+        onClose={() => setShowNotification(false)}
+        checkpoint={notificationCheckpoint}
+        device={notificationDevice}
+      />
       <div className={classes.page}>
         <Outlet />
       </div>

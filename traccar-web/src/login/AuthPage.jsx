@@ -337,6 +337,13 @@ const AuthPage = () => {
         return () => handleLoginTokenListeners.delete(listener);
     }, []);
 
+    // Auto-switch to registration when server is new (empty database)
+    useEffect(() => {
+        if (server && server.newServer) {
+            setIsLogin(false);
+        }
+    }, [server?.newServer]);
+
     useEffect(() => {
         if (window.localStorage.getItem('hostname') !== window.location.hostname) {
             window.localStorage.setItem('hostname', window.location.hostname);

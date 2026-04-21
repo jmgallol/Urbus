@@ -61,6 +61,12 @@ const ReportsMenu = () => {
           selected={location.pathname === '/reports/events'}
         />
         <MenuItem
+          title={t('sharedRoutes')}
+          link="/reports/routes"
+          icon={<RouteIcon />}
+          selected={location.pathname === '/reports/routes'}
+        />
+        <MenuItem
           title={t('sharedGeofences')}
           link={buildLink('/reports/geofences')}
           icon={<PlaceIcon />}

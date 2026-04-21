@@ -10,6 +10,8 @@ import { groupsReducer as groups } from './groups';
 import { driversReducer as drivers } from './drivers';
 import { maintenancesReducer as maintenances } from './maintenances';
 import { calendarsReducer as calendars } from './calendars';
+import { checkpointsReducer as checkpoints } from './checkpoints';
+import routesReducer from './routes';
 import throttleMiddleware from './throttleMiddleware';
 
 const reducer = combineReducers({
@@ -23,6 +25,8 @@ const reducer = combineReducers({
   drivers,
   maintenances,
   calendars,
+  checkpoints,
+  routes: routesReducer,
 });
 
 export { errorsActions } from './errors';
@@ -35,6 +39,7 @@ export { groupsActions } from './groups';
 export { driversActions } from './drivers';
 export { maintenancesActions } from './maintenances';
 export { calendarsActions } from './calendars';
+export { checkpointsActions, fetchCheckpoints, createCheckpoint, updateCheckpoint, deleteCheckpoint } from './checkpoints';
 
 export default configureStore({
   reducer,

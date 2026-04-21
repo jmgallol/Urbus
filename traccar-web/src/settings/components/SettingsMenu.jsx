@@ -14,6 +14,7 @@ import HelpIcon from '@mui/icons-material/Help';
 import PaymentIcon from '@mui/icons-material/Payment';
 import CampaignIcon from '@mui/icons-material/Campaign';
 import CalculateIcon from '@mui/icons-material/Calculate';
+import DirectionsIcon from '@mui/icons-material/Directions';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { useTranslation } from '../../common/components/LocalizationProvider';
@@ -93,6 +94,12 @@ const SettingsMenu = () => {
                 selected={location.pathname.startsWith('/settings/calendar')}
               />
             )}
+            <MenuItem
+              title={t('sharedRoutes')}
+              link="/settings/routes"
+              icon={<DirectionsIcon />}
+              selected={location.pathname.startsWith('/settings/routes')}
+            />
             {!features.disableComputedAttributes && (
               <MenuItem
                 title={t('sharedComputedAttributes')}
