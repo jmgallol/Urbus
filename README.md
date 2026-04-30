@@ -1,51 +1,61 @@
-# [Traccar](https://www.traccar.org)
 
-## Overview
 
-Traccar is an open source GPS tracking system. This repository contains Java-based back-end service. It supports more than 200 GPS protocols and more than 2000 models of GPS tracking devices. Traccar can be used with any major SQL database system. It also provides easy to use [REST API](https://www.traccar.org/traccar-api/).
+## Quick Start (Guía Rápida)
 
-Other parts of Traccar solution include:
+### Requisitos
+- Java 11+
+- Node.js 16+
+- npm
 
-- [Traccar web app](https://github.com/traccar/traccar-web)
-- [Traccar Manager app](https://github.com/traccar/traccar-manager)
+### Pasos para ejecutar el proyecto
 
-There is also a set of mobile apps that you can use for tracking mobile devices:
+#### 1️⃣ **Terminal 1 - Iniciar el servidor Backend**
 
-- [Traccar Client app](https://github.com/traccar/traccar-client)
+```bash
+# En la carpeta raíz del proyecto
+.\start-server.bat
+```
 
-## Features
+**Espera a ver**: `Database is up to date, no changesets to execute`
 
-Some of the available features include:
+El backend estará disponible en: **http://localhost:8082**
 
-- Real-time GPS tracking
-- Driver behaviour monitoring
-- Detailed and summary reports
-- Geofencing functionality
-- Alarms and notifications
-- Account and device management
-- Email and SMS support
+#### 2️⃣ **Terminal 2 - Iniciar el Frontend**
 
-## Build
+```bash
+# En la carpeta raíz del proyecto, abre una NUEVA terminal
+cd traccar-web
+npm install  # Solo la primera vez
+npm start
+```
 
-Please read [build from source documentation](https://www.traccar.org/build/) on the official website.
+**Espera a ver**: `VITE ready in XXX ms` y la URL `http://localhost:3002`
 
-## Team
+#### 3️⃣ **Acceder a la aplicación**
 
-- Anton Tananaev ([anton@traccar.org](mailto:anton@traccar.org))
-- Andrey Kunitsyn ([andrey@traccar.org](mailto:andrey@traccar.org))
+Abre tu navegador en: **http://localhost:3002**
 
-## License
+1. Haz clic en **REGISTRARSE**
+2. Completa el formulario con:
+   - Nombre: Tu nombre
+   - Email: `usuario@localhost` (o cualquier email único)
+   - Contraseña: Tu contraseña
+3. Haz clic en **REGISTRARSE**
+4. ¡Ya estás dentro como admin!
 
-    Apache License, Version 2.0
+#### ⚠️ Solución de problemas
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+**Error de constraint en la base de datos**
+```bash
+Remove-Item -Force "database/data/database.mv.db"
+Remove-Item -Force "database/data/database.trace.db"
+# Reinicia el servidor con: .\start-server.bat
+```
 
-        http://www.apache.org/licenses/LICENSE-2.0
+**El puerto 3002 ya está en uso**
+```bash
+npm start  # Automáticamente usará el siguiente puerto disponible
+```
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+---
+
