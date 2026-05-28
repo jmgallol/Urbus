@@ -22,10 +22,10 @@ const RoutesPage = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const routes = useSelector((state) => Object.values(state.routes.items));
+    const routesMap = useSelector((state) => state.routes.items);
     const loading = useSelector((state) => state.routes.loading);
 
-    const [filteredRoutes, setFilteredRoutes] = useState(routes);
+    const [filteredRoutes, setFilteredRoutes] = useState([]);
     const [searchValue, setSearchValue] = useState('');
 
     useEffect(() => {
@@ -33,6 +33,7 @@ const RoutesPage = () => {
     }, [dispatch]);
 
     useEffect(() => {
+        const routes = Object.values(routesMap || {});
         if (searchValue) {
             setFilteredRoutes(
                 routes.filter((route) =>
@@ -42,7 +43,7 @@ const RoutesPage = () => {
         } else {
             setFilteredRoutes(routes);
         }
-    }, [routes, searchValue]);
+    }, [routesMap, searchValue]);
 
     const handleDelete = (id) => {
         dispatch(deleteRoute(id));

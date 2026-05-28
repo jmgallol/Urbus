@@ -40,6 +40,7 @@ export { driversActions } from './drivers';
 export { maintenancesActions } from './maintenances';
 export { calendarsActions } from './calendars';
 export { checkpointsActions, fetchCheckpoints, createCheckpoint, updateCheckpoint, deleteCheckpoint } from './checkpoints';
+export { fetchDeviceRoutes, assignDeviceToRoute, unassignDeviceFromRoute, fetchRouteCheckpoints } from './routes';
 
 export default configureStore({
   reducer,

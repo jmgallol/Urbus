@@ -34,7 +34,7 @@ const useStyles = makeStyles()((theme) => ({
     },
 }));
 
-const CheckpointsDrawer = ({ open, onClose, onEditCheckpoint }) => {
+const CheckpointsDrawer = ({ open, onClose, onEditCheckpoint, deviceId }) => {
     const { classes } = useStyles();
 
     return (
@@ -59,7 +59,7 @@ const CheckpointsDrawer = ({ open, onClose, onEditCheckpoint }) => {
                 </IconButton>
             </Toolbar>
             <Box className={classes.content}>
-                <CheckpointsList onEdit={onEditCheckpoint} />
+                <CheckpointsList onEdit={onEditCheckpoint} deviceId={deviceId} />
             </Box>
         </Drawer>
     );

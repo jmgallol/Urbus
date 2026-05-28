@@ -9,11 +9,11 @@
     <entry key='database.driver'>org.postgresql.Driver</entry>
     <entry key='database.url'>jdbc:postgresql://localhost:5432/urbus_production</entry>
     <entry key='database.user'>urbus_app_prod</entry>
-    <entry key='database.password'>Production_Urbus_2026</entry>
+    <entry key='database.password'>'Production_Password'</entry>
 
     <entry key='database.driver'>org.postgresql.Driver</entry>
     <entry key='database.url'>jdbc:postgresql://localhost:5432/urbus_staging</entry>
     <entry key='database.user'>urbus_app_staging</entry>
-    <entry key='database.password'>Staging_Urbus_2026</entry>
+    <entry key='database.password'>'Staging_Password'</entry>
 
 </properties>

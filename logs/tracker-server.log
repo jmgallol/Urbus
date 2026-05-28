@@ -1225,3 +1225,1365 @@
 2026-04-29 21:45:11  INFO: [T902f2f1f: osmand > 127.0.0.1] HTTP/1.1 200 OK\r\ncontent-length: 0\r\n\r\n
 2026-04-29 21:45:13  INFO: [T902f2f1f] id: 34383945, time: 2026-04-29 21:45:06, lat: 6.22687, lon: -75.59989, speed: 0.0, course: 0.0
 2026-04-29 21:45:14  INFO: [T902f2f1f] id: 34383945, time: 2026-04-29 21:45:10, lat: 6.22687, lon: -75.59989, speed: 0.0, course: 0.0
+2026-05-04 13:36:24  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 13:36:24  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 13:36:24  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 13:36:24  INFO: Character encoding: windows-1252
+2026-05-04 13:36:24  INFO: Version: 6.12.2
+2026-05-04 13:36:24  INFO: Starting server...
+2026-05-04 13:36:24  INFO: HikariPool-1 - Starting...
+2026-05-04 13:36:25  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 13:36:25  INFO: HikariPool-1 - Start completed.
+2026-05-04 13:36:25  INFO: Set default schema name to PUBLIC
+2026-05-04 13:36:25  INFO: Successfully acquired change log lock
+2026-05-04 13:36:25  INFO: Clearing database change log checksums for database h2
+2026-05-04 13:36:25  INFO: Successfully released change log lock
+2026-05-04 13:36:25  INFO: Command execution complete
+2026-05-04 13:36:26  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:36:26  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:36:26  INFO: Successfully acquired change log lock
+2026-05-04 13:36:26  INFO: Using deploymentId: 7919785210
+2026-05-04 13:36:26  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:36:26  INFO: Columns routeId(BIGINT) added to tc_devices
+2026-05-04 13:36:26  INFO: Foreign key constraint added to tc_devices (routeId)
+2026-05-04 13:36:26  INFO: Index idx_device_routeid created
+2026-05-04 13:36:26  INFO: ChangeSet changelog-device-route-assignment::changelog-device-route-assignment-1::urbus ran successfully in 40ms
+2026-05-04 13:36:26  INFO: UPDATE SUMMARY
+2026-05-04 13:36:26  INFO: Run:                          1
+2026-05-04 13:36:26  INFO: Previously run:              36
+2026-05-04 13:36:26  INFO: Filtered out:                 0
+2026-05-04 13:36:26  INFO: -------------------------------
+2026-05-04 13:36:26  INFO: Total change sets:           37
+2026-05-04 13:36:26  INFO: Update summary generated
+2026-05-04 13:36:26  INFO: Update command completed successfully.
+2026-05-04 13:36:26  INFO: Successfully released change log lock
+2026-05-04 13:36:26  INFO: Command execution complete
+2026-05-04 13:36:27  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 13:36:28  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 13:36:28  INFO: Session workerName=node0
+2026-05-04 13:36:28  INFO: Started oeje10s.ServletContextHandler@1fb71788{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@8cb7185{STARTED}}
+2026-05-04 13:36:28  INFO: Started oeje10s.ServletContextHandler@1fb71788{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@8cb7185{STARTED}}
+2026-05-04 13:36:28  INFO: Started oejs.ServerConnector@41db7f32{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 13:36:28  INFO: Started oejs.Server@38874eb5{STARTING}[12.1.6,sto=0] @865ms
+2026-05-04 13:42:45  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 13:42:46  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 13:42:46  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 13:42:46  INFO: Character encoding: windows-1252
+2026-05-04 13:42:46  INFO: Version: 6.12.2
+2026-05-04 13:42:46  INFO: Starting server...
+2026-05-04 13:42:46  INFO: HikariPool-1 - Starting...
+2026-05-04 13:42:46  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 13:42:46  INFO: HikariPool-1 - Start completed.
+2026-05-04 13:42:46  INFO: Set default schema name to PUBLIC
+2026-05-04 13:42:46  INFO: Creating snapshot
+2026-05-04 13:42:46  INFO: Successfully acquired change log lock
+2026-05-04 13:42:46  INFO: Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-05-04 13:42:46  INFO: Clearing database change log checksums for database h2
+2026-05-04 13:42:46  INFO: Successfully released change log lock
+2026-05-04 13:42:46  INFO: Command execution complete
+2026-05-04 13:42:47  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:42:47  INFO: Successfully acquired change log lock
+2026-05-04 13:42:47  INFO: Using deploymentId: 7920166628
+2026-05-04 13:42:47  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:42:48  INFO: Table tc_attributes created
+2026-05-04 13:42:48  INFO: Table tc_calendars created
+2026-05-04 13:42:48  INFO: Table tc_commands created
+2026-05-04 13:42:48  INFO: Table tc_device_attribute created
+2026-05-04 13:42:48  INFO: Table tc_device_command created
+2026-05-04 13:42:48  INFO: Table tc_device_driver created
+2026-05-04 13:42:48  INFO: Table tc_device_geofence created
+2026-05-04 13:42:48  INFO: Table tc_device_maintenance created
+2026-05-04 13:42:48  INFO: Table tc_device_notification created
+2026-05-04 13:42:48  INFO: Table tc_devices created
+2026-05-04 13:42:48  INFO: Table tc_drivers created
+2026-05-04 13:42:48  INFO: Table tc_events created
+2026-05-04 13:42:48  INFO: Table tc_geofences created
+2026-05-04 13:42:48  INFO: Table tc_group_attribute created
+2026-05-04 13:42:48  INFO: Table tc_group_command created
+2026-05-04 13:42:48  INFO: Table tc_group_driver created
+2026-05-04 13:42:48  INFO: Table tc_group_geofence created
+2026-05-04 13:42:48  INFO: Table tc_group_maintenance created
+2026-05-04 13:42:48  INFO: Table tc_group_notification created
+2026-05-04 13:42:48  INFO: Table tc_groups created
+2026-05-04 13:42:48  INFO: Table tc_maintenances created
+2026-05-04 13:42:48  INFO: Table tc_notifications created
+2026-05-04 13:42:48  INFO: Table tc_positions created
+2026-05-04 13:42:48  INFO: Table tc_servers created
+2026-05-04 13:42:48  INFO: Table tc_statistics created
+2026-05-04 13:42:48  INFO: Table tc_user_attribute created
+2026-05-04 13:42:48  INFO: Table tc_user_calendar created
+2026-05-04 13:42:48  INFO: Table tc_user_command created
+2026-05-04 13:42:48  INFO: Table tc_user_device created
+2026-05-04 13:42:48  INFO: Table tc_user_driver created
+2026-05-04 13:42:48  INFO: Table tc_user_geofence created
+2026-05-04 13:42:48  INFO: Table tc_user_group created
+2026-05-04 13:42:48  INFO: Table tc_user_maintenance created
+2026-05-04 13:42:48  INFO: Table tc_user_notification created
+2026-05-04 13:42:48  INFO: Table tc_user_user created
+2026-05-04 13:42:48  INFO: Table tc_users created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_command (commandid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_devices (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_events (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_command (commandid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_command (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_positions (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_command (commandid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_command (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_device (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_driver (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_group (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_group (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_notification (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_user (userid)
+2026-05-04 13:42:48  INFO: New row inserted into tc_servers
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 189ms
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_groups (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 3ms
+2026-05-04 13:42:48  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2026-05-04 13:42:48  INFO: Creating snapshot
+2026-05-04 13:42:48  INFO: Index user_device_user_id created
+2026-05-04 13:42:48  INFO: Index position_deviceid_fixtime created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 20ms
+2026-05-04 13:42:48  INFO: Index event_deviceid_servertime created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 1ms
+2026-05-04 13:42:48  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 9ms
+2026-05-04 13:42:48  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 4ms
+2026-05-04 13:42:48  INFO: Column tc_events.servertime renamed to eventtime
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 2ms
+2026-05-04 13:42:48  INFO: Table tc_orders created
+2026-05-04 13:42:48  INFO: Table tc_user_order created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_order (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_order (orderid)
+2026-05-04 13:42:48  INFO: Table tc_group_order created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_order (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_order (orderid)
+2026-05-04 13:42:48  INFO: Table tc_device_order created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_order (orderid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 15ms
+2026-05-04 13:42:48  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2026-05-04 13:42:48  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2026-05-04 13:42:48  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2026-05-04 13:42:48  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2026-05-04 13:42:48  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2026-05-04 13:42:48  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 21ms
+2026-05-04 13:42:48  INFO: Index idx_drivers_uniqueid created
+2026-05-04 13:42:48  INFO: Index idx_devices_uniqueid created
+2026-05-04 13:42:48  INFO: Index idx_users_email created
+2026-05-04 13:42:48  INFO: Index idx_users_login created
+2026-05-04 13:42:48  INFO: Index idx_users_token created
+2026-05-04 13:42:48  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 7ms
+2026-05-04 13:42:48  INFO: Columns status(CHAR(8)) added to tc_devices
+2026-05-04 13:42:48  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 19ms
+2026-05-04 13:42:48  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2026-05-04 13:42:48  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2026-05-04 13:42:48  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2026-05-04 13:42:48  INFO: Table tc_keystore created
+2026-05-04 13:42:48  INFO: Index idx_users_token dropped from table tc_users
+2026-05-04 13:42:48  INFO: Column tc_users.token dropped
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 32ms
+2026-05-04 13:42:48  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2026-05-04 13:42:48  INFO: Table tc_commands_queue created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2026-05-04 13:42:48  INFO: Index idx_commands_queue_deviceid created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 44ms
+2026-05-04 13:42:48  INFO: Column tc_commands_queue.description dropped
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 2ms
+2026-05-04 13:42:48  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2026-05-04 13:42:48  INFO: Table tc_reports created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_reports (calendarid)
+2026-05-04 13:42:48  INFO: Table tc_user_report created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_report (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_report (reportid)
+2026-05-04 13:42:48  INFO: Table tc_group_report created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_report (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_report (reportid)
+2026-05-04 13:42:48  INFO: Table tc_device_report created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_report (reportid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 19ms
+2026-05-04 13:42:48  INFO: Columns commandid(INT) added to tc_notifications
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_notifications (commandid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 6ms
+2026-05-04 13:42:48  INFO: Column tc_devices.geofenceids dropped
+2026-05-04 13:42:48  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 8ms
+2026-05-04 13:42:48  INFO: Columns calendarid(INT) added to tc_devices
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_devices (calendarid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 8ms
+2026-05-04 13:42:48  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 6ms
+2026-05-04 13:42:48  INFO: Columns temporary(BOOLEAN) added to tc_users
+2026-05-04 13:42:48  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 6ms
+2026-05-04 13:42:48  INFO: Column tc_servers.twelvehourformat dropped
+2026-05-04 13:42:48  INFO: Column tc_users.twelvehourformat dropped
+2026-05-04 13:42:48  INFO: Columns priority(INT) added to tc_attributes
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 17ms
+2026-05-04 13:42:48  INFO: Creating snapshot
+2026-05-04 13:42:48  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2026-05-04 13:42:48  INFO: Foreign key fk_events_deviceid dropped
+2026-05-04 13:42:48  INFO: Foreign key fk_positions_deviceid dropped
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 9ms
+2026-05-04 13:42:48  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 5ms
+2026-05-04 13:42:48  INFO: Creating snapshot
+2026-05-04 13:42:48  INFO: Table tc_actions created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 17ms
+2026-05-04 13:42:48  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-04 13:42:48  INFO: Columns motionpositionid(INT) added to tc_devices
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 7ms
+2026-05-04 13:42:48  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-04 13:42:48  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-other::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : Not precondition failed
+
+2026-05-04 13:42:48  INFO: Table tc_revoked_tokens created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.11.0::changelog-6.11.0::author ran successfully in 3ms
+2026-05-04 13:42:48  INFO: Columns motionlatitude(DOUBLE),motionlongitude(DOUBLE) added to tc_devices
+2026-05-04 13:42:48  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0::author ran successfully in 12ms
+2026-05-04 13:42:48  INFO: Table tc_checkpoints created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_checkpoints (groupId)
+2026-05-04 13:42:48  INFO: Index idx_checkpoint_groupid created
+2026-05-04 13:42:48  INFO: Table tc_user_checkpoint created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_checkpoint (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_checkpoint (checkpointid)
+2026-05-04 13:42:48  INFO: Table tc_group_checkpoint created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_checkpoint (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_checkpoint (checkpointid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-checkpoints::changelog-checkpoints-1::urbus ran successfully in 14ms
+2026-05-04 13:42:48  INFO: Table tc_routes created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_routes (groupId)
+2026-05-04 13:42:48  INFO: Index idx_route_groupid created
+2026-05-04 13:42:48  INFO: Index idx_route_active created
+2026-05-04 13:42:48  INFO: Table tc_user_route created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_route (userid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_user_route (routeid)
+2026-05-04 13:42:48  INFO: Table tc_group_route created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_route (groupid)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_group_route (routeid)
+2026-05-04 13:42:48  INFO: ChangeSet changelog-routes::changelog-routes-1::urbus ran successfully in 13ms
+2026-05-04 13:42:48  INFO: Table tc_route_checkpoint created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_route_checkpoint (routeId)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_route_checkpoint (checkpointId)
+2026-05-04 13:42:48  INFO: Index idx_route_checkpoint_routeid created
+2026-05-04 13:42:48  INFO: Index idx_route_checkpoint_checkpointid created
+2026-05-04 13:42:48  INFO: Index idx_route_checkpoint_sequence created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-routes::changelog-routes-2::urbus ran successfully in 6ms
+2026-05-04 13:42:48  INFO: Table tc_device_route created
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_route (deviceId)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_route (routeId)
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_device_route (currentCheckpointId)
+2026-05-04 13:42:48  INFO: Index idx_device_route_deviceid created
+2026-05-04 13:42:48  INFO: Index idx_device_route_routeid created
+2026-05-04 13:42:48  INFO: Index idx_device_route_completed created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-routes::changelog-routes-3::urbus ran successfully in 7ms
+2026-05-04 13:42:48  INFO: Columns routeId(BIGINT) added to tc_devices
+2026-05-04 13:42:48  INFO: Foreign key constraint added to tc_devices (routeId)
+2026-05-04 13:42:48  INFO: Index idx_device_routeid created
+2026-05-04 13:42:48  INFO: ChangeSet changelog-device-route-assignment::changelog-device-route-assignment-1::urbus ran successfully in 8ms
+2026-05-04 13:42:48  INFO: UPDATE SUMMARY
+2026-05-04 13:42:48  INFO: Run:                         37
+2026-05-04 13:42:48  INFO: Previously run:               0
+2026-05-04 13:42:48  INFO: Filtered out:                 0
+2026-05-04 13:42:48  INFO: -------------------------------
+2026-05-04 13:42:48  INFO: Total change sets:           37
+2026-05-04 13:42:48  INFO: Update summary generated
+2026-05-04 13:42:48  INFO: Update command completed successfully.
+2026-05-04 13:42:48  INFO: Successfully released change log lock
+2026-05-04 13:42:48  INFO: Command execution complete
+2026-05-04 13:42:49  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 13:42:50  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 13:42:50  INFO: Session workerName=node0
+2026-05-04 13:42:50  INFO: Started oeje10s.ServletContextHandler@23ec63af{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@280d6a20{STARTED}}
+2026-05-04 13:42:51  INFO: Started oeje10s.ServletContextHandler@23ec63af{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@280d6a20{STARTED}}
+2026-05-04 13:42:51  INFO: Started oejs.ServerConnector@3a66d97e{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 13:42:51  INFO: Started oejs.Server@1add3e03{STARTING}[12.1.6,sto=0] @862ms
+2026-05-04 13:49:28  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 13:49:29  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 13:49:29  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 13:49:29  INFO: Character encoding: windows-1252
+2026-05-04 13:49:29  INFO: Version: 6.12.2
+2026-05-04 13:49:29  INFO: Starting server...
+2026-05-04 13:49:29  INFO: HikariPool-1 - Starting...
+2026-05-04 13:49:30 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 13:49:39  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 13:49:39  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 13:49:39  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 13:49:39  INFO: Character encoding: windows-1252
+2026-05-04 13:49:39  INFO: Version: 6.12.2
+2026-05-04 13:49:39  INFO: Starting server...
+2026-05-04 13:49:39  INFO: HikariPool-1 - Starting...
+2026-05-04 13:49:40  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 13:49:40  INFO: HikariPool-1 - Start completed.
+2026-05-04 13:49:40  INFO: Set default schema name to PUBLIC
+2026-05-04 13:49:40  INFO: Successfully acquired change log lock
+2026-05-04 13:49:40  INFO: Clearing database change log checksums for database h2
+2026-05-04 13:49:40  INFO: Successfully released change log lock
+2026-05-04 13:49:40  INFO: Command execution complete
+2026-05-04 13:49:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:49:41  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:49:41  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:49:41  INFO: UPDATE SUMMARY
+2026-05-04 13:49:41  INFO: Run:                          0
+2026-05-04 13:49:41  INFO: Previously run:              37
+2026-05-04 13:49:41  INFO: Filtered out:                 0
+2026-05-04 13:49:41  INFO: -------------------------------
+2026-05-04 13:49:41  INFO: Total change sets:           37
+2026-05-04 13:49:41  INFO: Update summary generated
+2026-05-04 13:49:41  INFO: Command execution complete
+2026-05-04 13:49:42  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 13:49:42  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 13:49:42  INFO: Session workerName=node0
+2026-05-04 13:49:42  INFO: Started oeje10s.ServletContextHandler@49e62b17{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@288409f0{STARTED}}
+2026-05-04 13:49:43  INFO: Started oeje10s.ServletContextHandler@49e62b17{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@288409f0{STARTED}}
+2026-05-04 13:49:43  INFO: Started oejs.ServerConnector@21d15932{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 13:49:43  INFO: Started oejs.Server@3966c679{STARTING}[12.1.6,sto=0] @797ms
+2026-05-04 13:54:51  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 13:54:51  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 13:54:51  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 13:54:51  INFO: Character encoding: windows-1252
+2026-05-04 13:54:51  INFO: Version: 6.12.2
+2026-05-04 13:54:51  INFO: Starting server...
+2026-05-04 13:54:52  INFO: HikariPool-1 - Starting...
+2026-05-04 13:54:52  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 13:54:52  INFO: HikariPool-1 - Start completed.
+2026-05-04 13:54:52  INFO: Set default schema name to PUBLIC
+2026-05-04 13:54:52  INFO: Creating snapshot
+2026-05-04 13:54:52  INFO: Successfully acquired change log lock
+2026-05-04 13:54:52  INFO: Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-05-04 13:54:52  INFO: Clearing database change log checksums for database h2
+2026-05-04 13:54:52  INFO: Successfully released change log lock
+2026-05-04 13:54:52  INFO: Command execution complete
+2026-05-04 13:54:53  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:54:53  INFO: Successfully acquired change log lock
+2026-05-04 13:54:53  INFO: Using deploymentId: 7920892578
+2026-05-04 13:54:53  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:54:54  INFO: Table tc_attributes created
+2026-05-04 13:54:54  INFO: Table tc_calendars created
+2026-05-04 13:54:54  INFO: Table tc_commands created
+2026-05-04 13:54:54  INFO: Table tc_device_attribute created
+2026-05-04 13:54:54  INFO: Table tc_device_command created
+2026-05-04 13:54:54  INFO: Table tc_device_driver created
+2026-05-04 13:54:54  INFO: Table tc_device_geofence created
+2026-05-04 13:54:54  INFO: Table tc_device_maintenance created
+2026-05-04 13:54:54  INFO: Table tc_device_notification created
+2026-05-04 13:54:54  INFO: Table tc_devices created
+2026-05-04 13:54:54  INFO: Table tc_drivers created
+2026-05-04 13:54:54  INFO: Table tc_events created
+2026-05-04 13:54:54  INFO: Table tc_geofences created
+2026-05-04 13:54:54  INFO: Table tc_group_attribute created
+2026-05-04 13:54:54  INFO: Table tc_group_command created
+2026-05-04 13:54:54  INFO: Table tc_group_driver created
+2026-05-04 13:54:54  INFO: Table tc_group_geofence created
+2026-05-04 13:54:54  INFO: Table tc_group_maintenance created
+2026-05-04 13:54:54  INFO: Table tc_group_notification created
+2026-05-04 13:54:54  INFO: Table tc_groups created
+2026-05-04 13:54:54  INFO: Table tc_maintenances created
+2026-05-04 13:54:54  INFO: Table tc_notifications created
+2026-05-04 13:54:54  INFO: Table tc_positions created
+2026-05-04 13:54:54  INFO: Table tc_servers created
+2026-05-04 13:54:54  INFO: Table tc_statistics created
+2026-05-04 13:54:54  INFO: Table tc_user_attribute created
+2026-05-04 13:54:54  INFO: Table tc_user_calendar created
+2026-05-04 13:54:54  INFO: Table tc_user_command created
+2026-05-04 13:54:54  INFO: Table tc_user_device created
+2026-05-04 13:54:54  INFO: Table tc_user_driver created
+2026-05-04 13:54:54  INFO: Table tc_user_geofence created
+2026-05-04 13:54:54  INFO: Table tc_user_group created
+2026-05-04 13:54:54  INFO: Table tc_user_maintenance created
+2026-05-04 13:54:54  INFO: Table tc_user_notification created
+2026-05-04 13:54:54  INFO: Table tc_user_user created
+2026-05-04 13:54:54  INFO: Table tc_users created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_command (commandid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_devices (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_events (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_command (commandid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_command (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_positions (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_command (commandid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_command (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_device (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_driver (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_group (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_group (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_notification (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_user (userid)
+2026-05-04 13:54:54  INFO: New row inserted into tc_servers
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 263ms
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_groups (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 6ms
+2026-05-04 13:54:54  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2026-05-04 13:54:54  INFO: Creating snapshot
+2026-05-04 13:54:54  INFO: Index user_device_user_id created
+2026-05-04 13:54:54  INFO: Index position_deviceid_fixtime created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 23ms
+2026-05-04 13:54:54  INFO: Index event_deviceid_servertime created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 2ms
+2026-05-04 13:54:54  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 13ms
+2026-05-04 13:54:54  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 7ms
+2026-05-04 13:54:54  INFO: Column tc_events.servertime renamed to eventtime
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 3ms
+2026-05-04 13:54:54  INFO: Table tc_orders created
+2026-05-04 13:54:54  INFO: Table tc_user_order created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_order (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_order (orderid)
+2026-05-04 13:54:54  INFO: Table tc_group_order created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_order (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_order (orderid)
+2026-05-04 13:54:54  INFO: Table tc_device_order created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_order (orderid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 19ms
+2026-05-04 13:54:54  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2026-05-04 13:54:54  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2026-05-04 13:54:54  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2026-05-04 13:54:54  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2026-05-04 13:54:54  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2026-05-04 13:54:54  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 28ms
+2026-05-04 13:54:54  INFO: Index idx_drivers_uniqueid created
+2026-05-04 13:54:54  INFO: Index idx_devices_uniqueid created
+2026-05-04 13:54:54  INFO: Index idx_users_email created
+2026-05-04 13:54:54  INFO: Index idx_users_login created
+2026-05-04 13:54:54  INFO: Index idx_users_token created
+2026-05-04 13:54:54  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 12ms
+2026-05-04 13:54:54  INFO: Columns status(CHAR(8)) added to tc_devices
+2026-05-04 13:54:54  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 18ms
+2026-05-04 13:54:54  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2026-05-04 13:54:54  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2026-05-04 13:54:54  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2026-05-04 13:54:54  INFO: Table tc_keystore created
+2026-05-04 13:54:54  INFO: Index idx_users_token dropped from table tc_users
+2026-05-04 13:54:54  INFO: Column tc_users.token dropped
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 38ms
+2026-05-04 13:54:54  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2026-05-04 13:54:54  INFO: Table tc_commands_queue created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2026-05-04 13:54:54  INFO: Index idx_commands_queue_deviceid created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 43ms
+2026-05-04 13:54:54  INFO: Column tc_commands_queue.description dropped
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 3ms
+2026-05-04 13:54:54  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2026-05-04 13:54:54  INFO: Table tc_reports created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_reports (calendarid)
+2026-05-04 13:54:54  INFO: Table tc_user_report created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_report (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_report (reportid)
+2026-05-04 13:54:54  INFO: Table tc_group_report created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_report (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_report (reportid)
+2026-05-04 13:54:54  INFO: Table tc_device_report created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_report (reportid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 16ms
+2026-05-04 13:54:54  INFO: Columns commandid(INT) added to tc_notifications
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_notifications (commandid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 5ms
+2026-05-04 13:54:54  INFO: Column tc_devices.geofenceids dropped
+2026-05-04 13:54:54  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 8ms
+2026-05-04 13:54:54  INFO: Columns calendarid(INT) added to tc_devices
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_devices (calendarid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 7ms
+2026-05-04 13:54:54  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 6ms
+2026-05-04 13:54:54  INFO: Columns temporary(BOOLEAN) added to tc_users
+2026-05-04 13:54:54  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 6ms
+2026-05-04 13:54:54  INFO: Column tc_servers.twelvehourformat dropped
+2026-05-04 13:54:54  INFO: Column tc_users.twelvehourformat dropped
+2026-05-04 13:54:54  INFO: Columns priority(INT) added to tc_attributes
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 10ms
+2026-05-04 13:54:54  INFO: Creating snapshot
+2026-05-04 13:54:54  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2026-05-04 13:54:54  INFO: Foreign key fk_events_deviceid dropped
+2026-05-04 13:54:54  INFO: Foreign key fk_positions_deviceid dropped
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 7ms
+2026-05-04 13:54:54  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 4ms
+2026-05-04 13:54:54  INFO: Creating snapshot
+2026-05-04 13:54:54  INFO: Table tc_actions created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 15ms
+2026-05-04 13:54:54  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-04 13:54:54  INFO: Columns motionpositionid(INT) added to tc_devices
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 7ms
+2026-05-04 13:54:54  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-04 13:54:54  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-other::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : Not precondition failed
+
+2026-05-04 13:54:54  INFO: Table tc_revoked_tokens created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.11.0::changelog-6.11.0::author ran successfully in 1ms
+2026-05-04 13:54:54  INFO: Columns motionlatitude(DOUBLE),motionlongitude(DOUBLE) added to tc_devices
+2026-05-04 13:54:54  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0::author ran successfully in 9ms
+2026-05-04 13:54:54  INFO: Table tc_checkpoints created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_checkpoints (groupId)
+2026-05-04 13:54:54  INFO: Index idx_checkpoint_groupid created
+2026-05-04 13:54:54  INFO: Table tc_user_checkpoint created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_checkpoint (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_checkpoint (checkpointid)
+2026-05-04 13:54:54  INFO: Table tc_group_checkpoint created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_checkpoint (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_checkpoint (checkpointid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-checkpoints::changelog-checkpoints-1::urbus ran successfully in 13ms
+2026-05-04 13:54:54  INFO: Table tc_routes created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_routes (groupId)
+2026-05-04 13:54:54  INFO: Index idx_route_groupid created
+2026-05-04 13:54:54  INFO: Index idx_route_active created
+2026-05-04 13:54:54  INFO: Table tc_user_route created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_route (userid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_user_route (routeid)
+2026-05-04 13:54:54  INFO: Table tc_group_route created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_route (groupid)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_group_route (routeid)
+2026-05-04 13:54:54  INFO: ChangeSet changelog-routes::changelog-routes-1::urbus ran successfully in 14ms
+2026-05-04 13:54:54  INFO: Table tc_route_checkpoint created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_route_checkpoint (routeId)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_route_checkpoint (checkpointId)
+2026-05-04 13:54:54  INFO: Index idx_route_checkpoint_routeid created
+2026-05-04 13:54:54  INFO: Index idx_route_checkpoint_checkpointid created
+2026-05-04 13:54:54  INFO: Index idx_route_checkpoint_sequence created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-routes::changelog-routes-2::urbus ran successfully in 9ms
+2026-05-04 13:54:54  INFO: Table tc_device_route created
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_route (deviceId)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_route (routeId)
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_device_route (currentCheckpointId)
+2026-05-04 13:54:54  INFO: Index idx_device_route_deviceid created
+2026-05-04 13:54:54  INFO: Index idx_device_route_routeid created
+2026-05-04 13:54:54  INFO: Index idx_device_route_completed created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-routes::changelog-routes-3::urbus ran successfully in 11ms
+2026-05-04 13:54:54  INFO: Columns routeId(BIGINT) added to tc_devices
+2026-05-04 13:54:54  INFO: Foreign key constraint added to tc_devices (routeId)
+2026-05-04 13:54:54  INFO: Index idx_device_routeid created
+2026-05-04 13:54:54  INFO: ChangeSet changelog-device-route-assignment::changelog-device-route-assignment-1::urbus ran successfully in 9ms
+2026-05-04 13:54:54  INFO: UPDATE SUMMARY
+2026-05-04 13:54:54  INFO: Run:                         37
+2026-05-04 13:54:54  INFO: Previously run:               0
+2026-05-04 13:54:54  INFO: Filtered out:                 0
+2026-05-04 13:54:54  INFO: -------------------------------
+2026-05-04 13:54:54  INFO: Total change sets:           37
+2026-05-04 13:54:54  INFO: Update summary generated
+2026-05-04 13:54:54  INFO: Update command completed successfully.
+2026-05-04 13:54:54  INFO: Successfully released change log lock
+2026-05-04 13:54:54  INFO: Command execution complete
+2026-05-04 13:54:55  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 13:54:56  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 13:54:56  INFO: Session workerName=node0
+2026-05-04 13:54:56  INFO: Started oeje10s.ServletContextHandler@23ec63af{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@280d6a20{STARTED}}
+2026-05-04 13:54:56  INFO: Started oeje10s.ServletContextHandler@23ec63af{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@280d6a20{STARTED}}
+2026-05-04 13:54:56  INFO: Started oejs.ServerConnector@3a66d97e{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 13:54:56  INFO: Started oejs.Server@1add3e03{STARTING}[12.1.6,sto=0] @710ms
+2026-05-04 13:56:24  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 13:56:24  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 13:56:24  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 13:56:24  INFO: Character encoding: windows-1252
+2026-05-04 13:56:24  INFO: Version: 6.12.2
+2026-05-04 13:56:24  INFO: Starting server...
+2026-05-04 13:56:24  INFO: HikariPool-1 - Starting...
+2026-05-04 13:56:24  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 13:56:24  INFO: HikariPool-1 - Start completed.
+2026-05-04 13:56:25  INFO: Set default schema name to PUBLIC
+2026-05-04 13:56:25  INFO: Successfully acquired change log lock
+2026-05-04 13:56:25  INFO: Clearing database change log checksums for database h2
+2026-05-04 13:56:25  INFO: Successfully released change log lock
+2026-05-04 13:56:25  INFO: Command execution complete
+2026-05-04 13:56:25  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:56:26  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:56:26  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 13:56:26  INFO: UPDATE SUMMARY
+2026-05-04 13:56:26  INFO: Run:                          0
+2026-05-04 13:56:26  INFO: Previously run:              37
+2026-05-04 13:56:26  INFO: Filtered out:                 0
+2026-05-04 13:56:26  INFO: -------------------------------
+2026-05-04 13:56:26  INFO: Total change sets:           37
+2026-05-04 13:56:26  INFO: Update summary generated
+2026-05-04 13:56:26  INFO: Command execution complete
+2026-05-04 13:56:27  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 13:56:27  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 13:56:27  INFO: Session workerName=node0
+2026-05-04 13:56:27  INFO: Started oeje10s.ServletContextHandler@49e62b17{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@288409f0{STARTED}}
+2026-05-04 13:56:28  INFO: Started oeje10s.ServletContextHandler@49e62b17{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@288409f0{STARTED}}
+2026-05-04 13:56:28  INFO: Started oejs.ServerConnector@21d15932{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 13:56:28  INFO: Started oejs.Server@3966c679{STARTING}[12.1.6,sto=0] @688ms
+2026-05-04 14:00:25  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 14:00:25  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 14:00:25  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 14:00:25  INFO: Character encoding: windows-1252
+2026-05-04 14:00:25  INFO: Version: 6.12.2
+2026-05-04 14:00:25  INFO: Starting server...
+2026-05-04 14:00:25  INFO: HikariPool-1 - Starting...
+2026-05-04 14:00:25  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 14:00:25  INFO: HikariPool-1 - Start completed.
+2026-05-04 14:00:26  INFO: Set default schema name to PUBLIC
+2026-05-04 14:00:26  INFO: Creating snapshot
+2026-05-04 14:00:26  INFO: Successfully acquired change log lock
+2026-05-04 14:00:26  INFO: Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-05-04 14:00:26  INFO: Clearing database change log checksums for database h2
+2026-05-04 14:00:26  INFO: Successfully released change log lock
+2026-05-04 14:00:26  INFO: Command execution complete
+2026-05-04 14:00:26  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:00:27  INFO: Successfully acquired change log lock
+2026-05-04 14:00:27  INFO: Using deploymentId: 7921225942
+2026-05-04 14:00:27  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:00:27  INFO: Table tc_attributes created
+2026-05-04 14:00:27  INFO: Table tc_calendars created
+2026-05-04 14:00:27  INFO: Table tc_commands created
+2026-05-04 14:00:27  INFO: Table tc_device_attribute created
+2026-05-04 14:00:27  INFO: Table tc_device_command created
+2026-05-04 14:00:27  INFO: Table tc_device_driver created
+2026-05-04 14:00:27  INFO: Table tc_device_geofence created
+2026-05-04 14:00:27  INFO: Table tc_device_maintenance created
+2026-05-04 14:00:27  INFO: Table tc_device_notification created
+2026-05-04 14:00:27  INFO: Table tc_devices created
+2026-05-04 14:00:27  INFO: Table tc_drivers created
+2026-05-04 14:00:27  INFO: Table tc_events created
+2026-05-04 14:00:27  INFO: Table tc_geofences created
+2026-05-04 14:00:27  INFO: Table tc_group_attribute created
+2026-05-04 14:00:27  INFO: Table tc_group_command created
+2026-05-04 14:00:27  INFO: Table tc_group_driver created
+2026-05-04 14:00:27  INFO: Table tc_group_geofence created
+2026-05-04 14:00:27  INFO: Table tc_group_maintenance created
+2026-05-04 14:00:27  INFO: Table tc_group_notification created
+2026-05-04 14:00:27  INFO: Table tc_groups created
+2026-05-04 14:00:27  INFO: Table tc_maintenances created
+2026-05-04 14:00:27  INFO: Table tc_notifications created
+2026-05-04 14:00:27  INFO: Table tc_positions created
+2026-05-04 14:00:27  INFO: Table tc_servers created
+2026-05-04 14:00:27  INFO: Table tc_statistics created
+2026-05-04 14:00:27  INFO: Table tc_user_attribute created
+2026-05-04 14:00:27  INFO: Table tc_user_calendar created
+2026-05-04 14:00:27  INFO: Table tc_user_command created
+2026-05-04 14:00:27  INFO: Table tc_user_device created
+2026-05-04 14:00:27  INFO: Table tc_user_driver created
+2026-05-04 14:00:27  INFO: Table tc_user_geofence created
+2026-05-04 14:00:27  INFO: Table tc_user_group created
+2026-05-04 14:00:27  INFO: Table tc_user_maintenance created
+2026-05-04 14:00:27  INFO: Table tc_user_notification created
+2026-05-04 14:00:27  INFO: Table tc_user_user created
+2026-05-04 14:00:27  INFO: Table tc_users created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_command (commandid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_command (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_driver (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_driver (driverid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_geofence (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_geofence (geofenceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_maintenance (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_maintenance (maintenanceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_notification (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_notification (notificationid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_devices (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_events (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_geofences (calendarid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_attribute (attributeid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_attribute (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_command (commandid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_command (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_driver (driverid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_driver (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_geofence (geofenceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_geofence (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_maintenance (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_maintenance (maintenanceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_notification (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_notification (notificationid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_notifications (calendarid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_positions (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_attribute (attributeid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_attribute (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_calendar (calendarid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_calendar (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_command (commandid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_command (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_attribute (attributeid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_attribute (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_device (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_device (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_driver (driverid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_driver (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_geofence (geofenceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_geofence (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_group (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_group (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_maintenance (maintenanceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_maintenance (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_notification (notificationid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_notification (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_user (userid)
+2026-05-04 14:00:27  INFO: New row inserted into tc_servers
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean::author ran successfully in 183ms
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_groups (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_user (manageduserid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.0-clean::changelog-4.0-clean-common::author ran successfully in 3ms
+2026-05-04 14:00:27  INFO: Marking ChangeSet: "changelog-4.1::changelog-4.1-mssql::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected mssql, got h2
+
+2026-05-04 14:00:27  INFO: Creating snapshot
+2026-05-04 14:00:27  INFO: Index user_device_user_id created
+2026-05-04 14:00:27  INFO: Index position_deviceid_fixtime created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.7::changelog-4.7::author ran successfully in 17ms
+2026-05-04 14:00:27  INFO: Index event_deviceid_servertime created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.9::changelog-4.9::author ran successfully in 2ms
+2026-05-04 14:00:27  INFO: Columns protocols(VARCHAR(4096)) added to tc_statistics
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.10::changelog-4.10::author ran successfully in 10ms
+2026-05-04 14:00:27  INFO: Columns announcement(VARCHAR(4000)) added to tc_servers
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.11::changelog-4.11::author ran successfully in 4ms
+2026-05-04 14:00:27  INFO: Column tc_events.servertime renamed to eventtime
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.13::changelog-4.13::author ran successfully in 2ms
+2026-05-04 14:00:27  INFO: Table tc_orders created
+2026-05-04 14:00:27  INFO: Table tc_user_order created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_order (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_order (orderid)
+2026-05-04 14:00:27  INFO: Table tc_group_order created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_order (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_order (orderid)
+2026-05-04 14:00:27  INFO: Table tc_device_order created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_order (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_order (orderid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-4.15::changelog-4.15::author ran successfully in 12ms
+2026-05-04 14:00:27  INFO: Columns disablereports(BOOLEAN) added to tc_servers
+2026-05-04 14:00:27  INFO: Columns disablereports(BOOLEAN) added to tc_users
+2026-05-04 14:00:27  INFO: Column tc_orders.toAddress renamed to toaddresstmp
+2026-05-04 14:00:27  INFO: Column tc_orders.fromAddress renamed to fromaddresstmp
+2026-05-04 14:00:27  INFO: Column tc_orders.toaddresstmp renamed to toaddress
+2026-05-04 14:00:27  INFO: Column tc_orders.fromaddresstmp renamed to fromaddress
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.0::changelog-5.0::author ran successfully in 19ms
+2026-05-04 14:00:27  INFO: Index idx_drivers_uniqueid created
+2026-05-04 14:00:27  INFO: Index idx_devices_uniqueid created
+2026-05-04 14:00:27  INFO: Index idx_users_email created
+2026-05-04 14:00:27  INFO: Index idx_users_login created
+2026-05-04 14:00:27  INFO: Index idx_users_token created
+2026-05-04 14:00:27  INFO: Columns overlayurl(VARCHAR(512)) added to tc_servers
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.1::changelog-5.1::author ran successfully in 13ms
+2026-05-04 14:00:27  INFO: Columns status(CHAR(8)) added to tc_devices
+2026-05-04 14:00:27  INFO: Columns geofenceids(VARCHAR(128)) added to tc_devices
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.2::changelog-5.2::author ran successfully in 13ms
+2026-05-04 14:00:27  INFO: Columns fixedemail(BOOLEAN) added to tc_servers
+2026-05-04 14:00:27  INFO: Columns fixedemail(BOOLEAN) added to tc_users
+2026-05-04 14:00:27  INFO: Columns expirationtime(TIMESTAMP) added to tc_devices
+2026-05-04 14:00:27  INFO: Table tc_keystore created
+2026-05-04 14:00:27  INFO: Index idx_users_token dropped from table tc_users
+2026-05-04 14:00:27  INFO: Column tc_users.token dropped
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.3::changelog-5.3::author ran successfully in 33ms
+2026-05-04 14:00:27  INFO: Columns motionstate(BOOLEAN),motiontime(TIMESTAMP),motiondistance(DOUBLE),overspeedstate(BOOLEAN),overspeedtime(TIMESTAMP),overspeedgeofenceid(INT) added to tc_devices
+2026-05-04 14:00:27  INFO: Table tc_commands_queue created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_commands_queue (deviceid)
+2026-05-04 14:00:27  INFO: Index idx_commands_queue_deviceid created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.4::changelog-5.4::author ran successfully in 45ms
+2026-05-04 14:00:27  INFO: Column tc_commands_queue.description dropped
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.5::changelog-5.5::author ran successfully in 3ms
+2026-05-04 14:00:27  INFO: Columns motionstreak(BOOLEAN) added to tc_devices
+2026-05-04 14:00:27  INFO: Table tc_reports created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_reports (calendarid)
+2026-05-04 14:00:27  INFO: Table tc_user_report created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_report (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_report (reportid)
+2026-05-04 14:00:27  INFO: Table tc_group_report created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_report (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_report (reportid)
+2026-05-04 14:00:27  INFO: Table tc_device_report created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_report (deviceid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_report (reportid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.6::changelog-5.6::author ran successfully in 21ms
+2026-05-04 14:00:27  INFO: Columns commandid(INT) added to tc_notifications
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_notifications (commandid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.7::changelog-5.7::author ran successfully in 5ms
+2026-05-04 14:00:27  INFO: Column tc_devices.geofenceids dropped
+2026-05-04 14:00:27  INFO: Columns geofenceids(VARCHAR(128)) added to tc_positions
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.8::changelog-5.8::author ran successfully in 9ms
+2026-05-04 14:00:27  INFO: Columns calendarid(INT) added to tc_devices
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_devices (calendarid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.9::changelog-5.9::author ran successfully in 7ms
+2026-05-04 14:00:27  INFO: Columns totpkey(VARCHAR(64)) added to tc_users
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.10::changelog-5.10::author ran successfully in 7ms
+2026-05-04 14:00:27  INFO: Columns temporary(BOOLEAN) added to tc_users
+2026-05-04 14:00:27  INFO: ChangeSet changelog-5.11::changelog-5.11::author ran successfully in 7ms
+2026-05-04 14:00:27  INFO: Column tc_servers.twelvehourformat dropped
+2026-05-04 14:00:27  INFO: Column tc_users.twelvehourformat dropped
+2026-05-04 14:00:27  INFO: Columns priority(INT) added to tc_attributes
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.2::changelog-6.2::author ran successfully in 13ms
+2026-05-04 14:00:27  INFO: Creating snapshot
+2026-05-04 14:00:27  INFO: Marking ChangeSet: "changelog-6.3::changelog-6.3-old::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : Foreign Key PUBLIC.fk_event_deviceid does not exist
+
+2026-05-04 14:00:27  INFO: Foreign key fk_events_deviceid dropped
+2026-05-04 14:00:27  INFO: Foreign key fk_positions_deviceid dropped
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.3::changelog-6.3-new::author ran successfully in 8ms
+2026-05-04 14:00:27  INFO: Columns description(VARCHAR(4000)) added to tc_notifications
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.6::changelog-6.6::author ran successfully in 3ms
+2026-05-04 14:00:27  INFO: Creating snapshot
+2026-05-04 14:00:27  INFO: Table tc_actions created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.7.0::changelog-6.7.0::author ran successfully in 15ms
+2026-05-04 14:00:27  INFO: Marking ChangeSet: "changelog-6.8.0::changelog-6.8.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-04 14:00:27  INFO: Columns motionpositionid(INT) added to tc_devices
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.9.0::changelog-6.9.0::author ran successfully in 5ms
+2026-05-04 14:00:27  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-timescale::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : DBMS Precondition failed: expected postgresql, got h2
+
+2026-05-04 14:00:27  INFO: Marking ChangeSet: "changelog-6.11.0::changelog-6.11.0-other::author" as ran despite precondition failure due to onFail='MARK_RAN': 
+          database/schema/changelog-master.xml : Not precondition failed
+
+2026-05-04 14:00:27  INFO: Table tc_revoked_tokens created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.11.0::changelog-6.11.0::author ran successfully in 0ms
+2026-05-04 14:00:27  INFO: Columns motionlatitude(DOUBLE),motionlongitude(DOUBLE) added to tc_devices
+2026-05-04 14:00:27  INFO: ChangeSet changelog-6.13.0::changelog-6.13.0::author ran successfully in 10ms
+2026-05-04 14:00:27  INFO: Table tc_checkpoints created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_checkpoints (groupId)
+2026-05-04 14:00:27  INFO: Index idx_checkpoint_groupid created
+2026-05-04 14:00:27  INFO: Table tc_user_checkpoint created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_checkpoint (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_checkpoint (checkpointid)
+2026-05-04 14:00:27  INFO: Table tc_group_checkpoint created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_checkpoint (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_checkpoint (checkpointid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-checkpoints::changelog-checkpoints-1::urbus ran successfully in 11ms
+2026-05-04 14:00:27  INFO: Table tc_routes created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_routes (groupId)
+2026-05-04 14:00:27  INFO: Index idx_route_groupid created
+2026-05-04 14:00:27  INFO: Index idx_route_active created
+2026-05-04 14:00:27  INFO: Table tc_user_route created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_route (userid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_user_route (routeid)
+2026-05-04 14:00:27  INFO: Table tc_group_route created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_route (groupid)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_group_route (routeid)
+2026-05-04 14:00:27  INFO: ChangeSet changelog-routes::changelog-routes-1::urbus ran successfully in 9ms
+2026-05-04 14:00:27  INFO: Table tc_route_checkpoint created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_route_checkpoint (routeId)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_route_checkpoint (checkpointId)
+2026-05-04 14:00:27  INFO: Index idx_route_checkpoint_routeid created
+2026-05-04 14:00:27  INFO: Index idx_route_checkpoint_checkpointid created
+2026-05-04 14:00:27  INFO: Index idx_route_checkpoint_sequence created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-routes::changelog-routes-2::urbus ran successfully in 5ms
+2026-05-04 14:00:27  INFO: Table tc_device_route created
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_route (deviceId)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_route (routeId)
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_device_route (currentCheckpointId)
+2026-05-04 14:00:27  INFO: Index idx_device_route_deviceid created
+2026-05-04 14:00:27  INFO: Index idx_device_route_routeid created
+2026-05-04 14:00:27  INFO: Index idx_device_route_completed created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-routes::changelog-routes-3::urbus ran successfully in 8ms
+2026-05-04 14:00:27  INFO: Columns routeId(BIGINT) added to tc_devices
+2026-05-04 14:00:27  INFO: Foreign key constraint added to tc_devices (routeId)
+2026-05-04 14:00:27  INFO: Index idx_device_routeid created
+2026-05-04 14:00:27  INFO: ChangeSet changelog-device-route-assignment::changelog-device-route-assignment-1::urbus ran successfully in 14ms
+2026-05-04 14:00:27  INFO: UPDATE SUMMARY
+2026-05-04 14:00:27  INFO: Run:                         37
+2026-05-04 14:00:27  INFO: Previously run:               0
+2026-05-04 14:00:27  INFO: Filtered out:                 0
+2026-05-04 14:00:27  INFO: -------------------------------
+2026-05-04 14:00:27  INFO: Total change sets:           37
+2026-05-04 14:00:27  INFO: Update summary generated
+2026-05-04 14:00:27  INFO: Update command completed successfully.
+2026-05-04 14:00:27  INFO: Successfully released change log lock
+2026-05-04 14:00:27  INFO: Command execution complete
+2026-05-04 14:00:28  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 14:00:29  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 14:00:29  INFO: Session workerName=node0
+2026-05-04 14:00:29  INFO: Started oeje10s.ServletContextHandler@23ec63af{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@280d6a20{STARTED}}
+2026-05-04 14:00:29  INFO: Started oeje10s.ServletContextHandler@23ec63af{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@280d6a20{STARTED}}
+2026-05-04 14:00:29  INFO: Started oejs.ServerConnector@3a66d97e{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 14:00:29  INFO: Started oejs.Server@1add3e03{STARTING}[12.1.6,sto=0] @592ms
+2026-05-04 14:02:00  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 14:02:00  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 14:02:00  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 14:02:00  INFO: Character encoding: windows-1252
+2026-05-04 14:02:00  INFO: Version: 6.12.2
+2026-05-04 14:02:00  INFO: Starting server...
+2026-05-04 14:02:00  INFO: HikariPool-1 - Starting...
+2026-05-04 14:02:00  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 14:02:00  INFO: HikariPool-1 - Start completed.
+2026-05-04 14:02:01  INFO: Set default schema name to PUBLIC
+2026-05-04 14:02:01  INFO: Successfully acquired change log lock
+2026-05-04 14:02:01  INFO: Clearing database change log checksums for database h2
+2026-05-04 14:02:01  INFO: Successfully released change log lock
+2026-05-04 14:02:01  INFO: Command execution complete
+2026-05-04 14:02:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:02:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:02:01  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:02:02  INFO: UPDATE SUMMARY
+2026-05-04 14:02:02  INFO: Run:                          0
+2026-05-04 14:02:02  INFO: Previously run:              37
+2026-05-04 14:02:02  INFO: Filtered out:                 0
+2026-05-04 14:02:02  INFO: -------------------------------
+2026-05-04 14:02:02  INFO: Total change sets:           37
+2026-05-04 14:02:02  INFO: Update summary generated
+2026-05-04 14:02:02  INFO: Command execution complete
+2026-05-04 14:02:02  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 14:02:03  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 14:02:03  INFO: Session workerName=node0
+2026-05-04 14:02:03  INFO: Started oeje10s.ServletContextHandler@49e62b17{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@288409f0{STARTED}}
+2026-05-04 14:02:03  INFO: Started oeje10s.ServletContextHandler@49e62b17{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@288409f0{STARTED}}
+2026-05-04 14:02:03  INFO: Started oejs.ServerConnector@4bb5298e{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 14:02:03  INFO: Started oejs.Server@21d15932{STARTING}[12.1.6,sto=0] @712ms
+2026-05-04 14:02:16  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 14:02:23  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 14:02:31  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 14:56:54  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 14:56:54  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 14:56:54  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 14:56:54  INFO: Character encoding: windows-1252
+2026-05-04 14:56:54  INFO: Version: 6.12.2
+2026-05-04 14:56:54  INFO: Starting server...
+2026-05-04 14:56:54  INFO: HikariPool-1 - Starting...
+2026-05-04 14:56:55  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 14:56:55  INFO: HikariPool-1 - Start completed.
+2026-05-04 14:56:55  INFO: Set default schema name to PUBLIC
+2026-05-04 14:56:55  INFO: Successfully acquired change log lock
+2026-05-04 14:56:55  INFO: Clearing database change log checksums for database h2
+2026-05-04 14:56:55  INFO: Successfully released change log lock
+2026-05-04 14:56:55  INFO: Command execution complete
+2026-05-04 14:56:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:56:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:56:56  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 14:56:56  INFO: UPDATE SUMMARY
+2026-05-04 14:56:56  INFO: Run:                          0
+2026-05-04 14:56:56  INFO: Previously run:              36
+2026-05-04 14:56:56  INFO: Filtered out:                 0
+2026-05-04 14:56:56  INFO: -------------------------------
+2026-05-04 14:56:56  INFO: Total change sets:           36
+2026-05-04 14:56:56  INFO: Update summary generated
+2026-05-04 14:56:56  INFO: Command execution complete
+2026-05-04 14:56:57  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 14:56:57  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 14:56:57  INFO: Session workerName=node0
+2026-05-04 14:56:57  INFO: Started oeje10s.ServletContextHandler@7fc1fd31{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@75a9cc24{STARTED}}
+2026-05-04 14:56:58  INFO: Started oeje10s.ServletContextHandler@7fc1fd31{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@75a9cc24{STARTED}}
+2026-05-04 14:56:58  INFO: Started oejs.ServerConnector@799cf32d{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 14:56:58  INFO: Started oejs.Server@331ad6eb{STARTING}[12.1.6,sto=0] @669ms
+2026-05-04 15:00:17  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:00:17  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:00:17  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:00:17  INFO: Character encoding: windows-1252
+2026-05-04 15:00:17  INFO: Version: 6.12.2
+2026-05-04 15:00:17  INFO: Starting server...
+2026-05-04 15:00:17  INFO: HikariPool-1 - Starting...
+2026-05-04 15:00:19 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 15:00:24  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:00:24  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:00:24  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:00:24  INFO: Character encoding: windows-1252
+2026-05-04 15:00:24  INFO: Version: 6.12.2
+2026-05-04 15:00:24  INFO: Starting server...
+2026-05-04 15:00:24  INFO: HikariPool-1 - Starting...
+2026-05-04 15:00:26 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 15:00:38  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:00:38  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:00:38  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:00:38  INFO: Character encoding: windows-1252
+2026-05-04 15:00:38  INFO: Version: 6.12.2
+2026-05-04 15:00:38  INFO: Starting server...
+2026-05-04 15:00:38  INFO: HikariPool-1 - Starting...
+2026-05-04 15:00:40 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 15:06:11  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:06:11  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:06:11  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:06:11  INFO: Character encoding: windows-1252
+2026-05-04 15:06:11  INFO: Version: 6.12.2
+2026-05-04 15:06:11  INFO: Starting server...
+2026-05-04 15:06:11  INFO: HikariPool-1 - Starting...
+2026-05-04 15:06:12 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 15:06:31  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:06:31  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:06:31  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:06:31  INFO: Character encoding: windows-1252
+2026-05-04 15:06:31  INFO: Version: 6.12.2
+2026-05-04 15:06:31  INFO: Starting server...
+2026-05-04 15:06:31  INFO: HikariPool-1 - Starting...
+2026-05-04 15:06:32 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 15:07:28  WARN: An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper. - org.traccar.storage.query.Condition$Or - ClassNotFoundException (... < LoginService:97 < SessionResource:120 < ... < WebServer:126 < ... < OverrideFileFilter:49 < ...)
+2026-05-04 15:07:28  WARN: /api/session - org.traccar.storage.query.Condition$Or - ClassNotFoundException (... < LoginService:97 < SessionResource:120 < ... < WebServer:126 < ... < OverrideFileFilter:49 < ...)
+2026-05-04 15:07:28  WARN: onError not handled due to prior sendError() s=HANDLING rs=BLOCKING os=OPEN is=IDLE awp=false se=true i=true al=0 - org.traccar.storage.query.Condition$Or - ClassNotFoundException (... < LoginService:97 < SessionResource:120 < ... < WebServer:126 < ... < OverrideFileFilter:49 < ...)
+2026-05-04 15:08:24  WARN: / - org.traccar.web.ResponseWrapper - ClassNotFoundException (... < OverrideTextFilter:57 < ...)
+2026-05-04 15:08:24  WARN: /favicon.ico - org.traccar.web.ResponseWrapper - ClassNotFoundException (OverrideTextFilter:57 < ...)
+2026-05-04 15:08:29  WARN: /favicon.ico - org.traccar.web.ResponseWrapper - ClassNotFoundException (OverrideTextFilter:57 < ...)
+2026-05-04 15:09:00  WARN: An exception mapping did not successfully produce and processed a response. Logging the exception propagated to the default exception mapper. - org.traccar.storage.query.Condition$Equals - ClassNotFoundException (... < UserResource:133 < ... < WebServer:126 < ... < OverrideFileFilter:49 < ... < OverrideTextFilter:53 < ...)
+2026-05-04 15:09:00  WARN: /api/users - org.traccar.storage.query.Condition$Equals - ClassNotFoundException (... < UserResource:133 < ... < WebServer:126 < ... < OverrideFileFilter:49 < ... < OverrideTextFilter:53 < ...)
+2026-05-04 15:09:00  WARN: onError not handled due to prior sendError() s=HANDLING rs=BLOCKING os=OPEN is=IDLE awp=false se=true i=true al=0 - org.traccar.storage.query.Condition$Equals - ClassNotFoundException (... < UserResource:133 < ... < WebServer:126 < ... < OverrideFileFilter:49 < ... < OverrideTextFilter:53 < ...)
+2026-05-04 15:14:38  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:14:38  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:14:38  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:14:38  INFO: Character encoding: windows-1252
+2026-05-04 15:14:38  INFO: Version: 6.12.2
+2026-05-04 15:14:38  INFO: Starting server...
+2026-05-04 15:14:38  INFO: HikariPool-1 - Starting...
+2026-05-04 15:14:38  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 15:14:38  INFO: HikariPool-1 - Start completed.
+2026-05-04 15:14:38  INFO: Set default schema name to PUBLIC
+2026-05-04 15:14:38  INFO: Successfully acquired change log lock
+2026-05-04 15:14:38  INFO: Clearing database change log checksums for database h2
+2026-05-04 15:14:38  INFO: Successfully released change log lock
+2026-05-04 15:14:38  INFO: Command execution complete
+2026-05-04 15:14:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 15:14:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 15:14:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 15:14:39  INFO: UPDATE SUMMARY
+2026-05-04 15:14:39  INFO: Run:                          0
+2026-05-04 15:14:39  INFO: Previously run:              36
+2026-05-04 15:14:39  INFO: Filtered out:                 0
+2026-05-04 15:14:39  INFO: -------------------------------
+2026-05-04 15:14:39  INFO: Total change sets:           36
+2026-05-04 15:14:39  INFO: Update summary generated
+2026-05-04 15:14:39  INFO: Command execution complete
+2026-05-04 15:14:40  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 15:14:40  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 15:14:40  INFO: Session workerName=node0
+2026-05-04 15:14:40  INFO: Started oeje10s.ServletContextHandler@6814262d{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7fc1fd31{STARTED}}
+2026-05-04 15:14:41  INFO: Started oeje10s.ServletContextHandler@6814262d{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7fc1fd31{STARTED}}
+2026-05-04 15:14:41  INFO: Started oejs.ServerConnector@66a8ff6d{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 15:14:41  INFO: Started oejs.Server@1abbc1d4{STARTING}[12.1.6,sto=0] @623ms
+2026-05-04 15:15:55  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 15:22:13  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 15:25:26  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 15:26:12  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 15:41:57  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:41:57  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:41:57  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:41:57  INFO: Character encoding: windows-1252
+2026-05-04 15:41:57  INFO: Version: 6.12.2
+2026-05-04 15:41:57  INFO: Starting server...
+2026-05-04 15:41:57  INFO: HikariPool-1 - Starting...
+2026-05-04 15:41:59 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 15:47:57  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 15:47:57  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 15:47:57  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 15:47:57  INFO: Character encoding: windows-1252
+2026-05-04 15:47:57  INFO: Version: 6.12.2
+2026-05-04 15:47:57  INFO: Starting server...
+2026-05-04 15:47:57  INFO: HikariPool-1 - Starting...
+2026-05-04 15:47:58  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 15:47:58  INFO: HikariPool-1 - Start completed.
+2026-05-04 15:47:58  INFO: Set default schema name to PUBLIC
+2026-05-04 15:47:58  INFO: Successfully acquired change log lock
+2026-05-04 15:47:58  INFO: Clearing database change log checksums for database h2
+2026-05-04 15:47:58  INFO: Successfully released change log lock
+2026-05-04 15:47:58  INFO: Command execution complete
+2026-05-04 15:47:58  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 15:47:59  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 15:47:59  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 15:47:59  INFO: UPDATE SUMMARY
+2026-05-04 15:47:59  INFO: Run:                          0
+2026-05-04 15:47:59  INFO: Previously run:              36
+2026-05-04 15:47:59  INFO: Filtered out:                 0
+2026-05-04 15:47:59  INFO: -------------------------------
+2026-05-04 15:47:59  INFO: Total change sets:           36
+2026-05-04 15:47:59  INFO: Update summary generated
+2026-05-04 15:47:59  INFO: Command execution complete
+2026-05-04 15:47:59  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 15:48:00  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 15:48:00  INFO: Session workerName=node0
+2026-05-04 15:48:00  INFO: Started oeje10s.ServletContextHandler@73385d3f{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@6814262d{STARTED}}
+2026-05-04 15:48:00  INFO: Started oeje10s.ServletContextHandler@73385d3f{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@6814262d{STARTED}}
+2026-05-04 15:48:00  INFO: Started oejs.ServerConnector@66589252{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 15:48:00  INFO: Started oejs.Server@66a8ff6d{STARTING}[12.1.6,sto=0] @619ms
+2026-05-04 18:38:51  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 18:38:51  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 18:38:51  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 18:38:51  INFO: Character encoding: windows-1252
+2026-05-04 18:38:51  INFO: Version: 6.12.2
+2026-05-04 18:38:51  INFO: Starting server...
+2026-05-04 18:38:51  INFO: HikariPool-1 - Starting...
+2026-05-04 18:38:53 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 19:35:29  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 19:35:29  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 19:35:29  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 19:35:29  INFO: Character encoding: windows-1252
+2026-05-04 19:35:29  INFO: Version: 6.12.2
+2026-05-04 19:35:29  INFO: Starting server...
+2026-05-04 19:35:29  INFO: HikariPool-1 - Starting...
+2026-05-04 19:35:31 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 19:37:43  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 19:37:43  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 19:37:43  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 19:37:43  INFO: Character encoding: windows-1252
+2026-05-04 19:37:43  INFO: Version: 6.12.2
+2026-05-04 19:37:43  INFO: Starting server...
+2026-05-04 19:37:43  INFO: HikariPool-1 - Starting...
+2026-05-04 19:37:44  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 19:37:44  INFO: HikariPool-1 - Start completed.
+2026-05-04 19:37:44  INFO: Set default schema name to PUBLIC
+2026-05-04 19:37:44  INFO: Successfully acquired change log lock
+2026-05-04 19:37:44  INFO: Clearing database change log checksums for database h2
+2026-05-04 19:37:44  INFO: Successfully released change log lock
+2026-05-04 19:37:44  INFO: Command execution complete
+2026-05-04 19:37:44  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 19:37:45  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 19:37:45  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 19:37:45  INFO: UPDATE SUMMARY
+2026-05-04 19:37:45  INFO: Run:                          0
+2026-05-04 19:37:45  INFO: Previously run:              36
+2026-05-04 19:37:45  INFO: Filtered out:                 0
+2026-05-04 19:37:45  INFO: -------------------------------
+2026-05-04 19:37:45  INFO: Total change sets:           36
+2026-05-04 19:37:45  INFO: Update summary generated
+2026-05-04 19:37:45  INFO: Command execution complete
+2026-05-04 19:37:46  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 19:37:46  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 19:37:46  INFO: Session workerName=node0
+2026-05-04 19:37:46  INFO: Started oeje10s.ServletContextHandler@75a9cc24{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@4449a60b{STARTED}}
+2026-05-04 19:37:47  INFO: Started oeje10s.ServletContextHandler@75a9cc24{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@4449a60b{STARTED}}
+2026-05-04 19:37:47  INFO: Started oejs.ServerConnector@336145a7{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 19:37:47  INFO: Started oejs.Server@6ad26381{STARTING}[12.1.6,sto=0] @620ms
+2026-05-04 19:38:46  INFO: login failed from: [0:0:0:0:0:0:0:1]
+2026-05-04 19:51:31  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 19:51:31  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 19:51:31  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 19:51:31  INFO: Character encoding: windows-1252
+2026-05-04 19:51:31  INFO: Version: 6.12.2
+2026-05-04 19:51:31  INFO: Starting server...
+2026-05-04 19:51:31  INFO: HikariPool-1 - Starting...
+2026-05-04 19:51:31  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 19:51:31  INFO: HikariPool-1 - Start completed.
+2026-05-04 19:51:31  INFO: Set default schema name to PUBLIC
+2026-05-04 19:51:32  INFO: Successfully acquired change log lock
+2026-05-04 19:51:32  INFO: Clearing database change log checksums for database h2
+2026-05-04 19:51:32  INFO: Successfully released change log lock
+2026-05-04 19:51:32  INFO: Command execution complete
+2026-05-04 19:51:32  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 19:51:32  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 19:51:32  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 19:51:32  INFO: UPDATE SUMMARY
+2026-05-04 19:51:32  INFO: Run:                          0
+2026-05-04 19:51:32  INFO: Previously run:              36
+2026-05-04 19:51:32  INFO: Filtered out:                 0
+2026-05-04 19:51:32  INFO: -------------------------------
+2026-05-04 19:51:32  INFO: Total change sets:           36
+2026-05-04 19:51:32  INFO: Update summary generated
+2026-05-04 19:51:32  INFO: Command execution complete
+2026-05-04 19:51:33  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 19:51:33  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 19:51:33  INFO: Session workerName=node0
+2026-05-04 19:51:33  INFO: Started oeje10s.ServletContextHandler@6814262d{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7fc1fd31{STARTED}}
+2026-05-04 19:51:34  INFO: Started oeje10s.ServletContextHandler@6814262d{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7fc1fd31{STARTED}}
+2026-05-04 19:51:34  INFO: Started oejs.ServerConnector@336145a7{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 19:51:34  INFO: Started oejs.Server@66a8ff6d{STARTING}[12.1.6,sto=0] @621ms
+2026-05-04 20:06:36  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 20:06:36  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 20:06:36  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 20:06:36  INFO: Character encoding: windows-1252
+2026-05-04 20:06:36  INFO: Version: 6.12.2
+2026-05-04 20:06:36  INFO: Starting server...
+2026-05-04 20:06:37  INFO: HikariPool-1 - Starting...
+2026-05-04 20:06:37  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 20:06:37  INFO: HikariPool-1 - Start completed.
+2026-05-04 20:06:37  INFO: Set default schema name to PUBLIC
+2026-05-04 20:06:37  INFO: Successfully acquired change log lock
+2026-05-04 20:06:37  INFO: Clearing database change log checksums for database h2
+2026-05-04 20:06:37  INFO: Successfully released change log lock
+2026-05-04 20:06:37  INFO: Command execution complete
+2026-05-04 20:06:38  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:06:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:06:39  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:06:39  INFO: UPDATE SUMMARY
+2026-05-04 20:06:39  INFO: Run:                          0
+2026-05-04 20:06:39  INFO: Previously run:              36
+2026-05-04 20:06:39  INFO: Filtered out:                 0
+2026-05-04 20:06:39  INFO: -------------------------------
+2026-05-04 20:06:39  INFO: Total change sets:           36
+2026-05-04 20:06:39  INFO: Update summary generated
+2026-05-04 20:06:39  INFO: Command execution complete
+2026-05-04 20:06:40  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 20:06:40  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 20:06:40  INFO: Session workerName=node0
+2026-05-04 20:06:40  INFO: Started oeje10s.ServletContextHandler@7fc1fd31{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@75a9cc24{STARTED}}
+2026-05-04 20:06:41  INFO: Started oeje10s.ServletContextHandler@7fc1fd31{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@75a9cc24{STARTED}}
+2026-05-04 20:06:41  INFO: Started oejs.ServerConnector@58b27966{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 20:06:41  INFO: Started oejs.Server@5cc669d{STARTING}[12.1.6,sto=0] @724ms
+2026-05-04 20:33:33  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 20:33:33  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 20:33:33  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 20:33:33  INFO: Character encoding: windows-1252
+2026-05-04 20:33:33  INFO: Version: 6.12.2
+2026-05-04 20:33:33  INFO: Starting server...
+2026-05-04 20:33:33  INFO: HikariPool-1 - Starting...
+2026-05-04 20:33:34 ERROR: Main method error - The file is locked: C:/Users/juanm/Documents/Traccat-Server/database/data/database.mv.db [2.4.240/7] - MVStoreException (... < DatabaseModule:80 < <gener:-1 < *:-1 < ... < MainModule:140 < <gener:-1 < ...)
+2026-05-04 20:35:19  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 20:35:19  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 20:35:19  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 20:35:19  INFO: Character encoding: windows-1252
+2026-05-04 20:35:19  INFO: Version: 6.12.2
+2026-05-04 20:35:19  INFO: Starting server...
+2026-05-04 20:35:19  INFO: HikariPool-1 - Starting...
+2026-05-04 20:35:19  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 20:35:19  INFO: HikariPool-1 - Start completed.
+2026-05-04 20:35:19  INFO: Set default schema name to PUBLIC
+2026-05-04 20:35:20  INFO: Successfully acquired change log lock
+2026-05-04 20:35:20  INFO: Clearing database change log checksums for database h2
+2026-05-04 20:35:20  INFO: Successfully released change log lock
+2026-05-04 20:35:20  INFO: Command execution complete
+2026-05-04 20:35:20  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:35:20  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:35:20  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:35:20  INFO: UPDATE SUMMARY
+2026-05-04 20:35:20  INFO: Run:                          0
+2026-05-04 20:35:20  INFO: Previously run:              36
+2026-05-04 20:35:20  INFO: Filtered out:                 0
+2026-05-04 20:35:20  INFO: -------------------------------
+2026-05-04 20:35:20  INFO: Total change sets:           36
+2026-05-04 20:35:20  INFO: Update summary generated
+2026-05-04 20:35:20  INFO: Command execution complete
+2026-05-04 20:35:21  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 20:35:22  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 20:35:22  INFO: Session workerName=node0
+2026-05-04 20:35:22  INFO: Started oeje10s.ServletContextHandler@7fc1fd31{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@75a9cc24{STARTED}}
+2026-05-04 20:35:22  INFO: Started oeje10s.ServletContextHandler@7fc1fd31{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@75a9cc24{STARTED}}
+2026-05-04 20:35:22  INFO: Started oejs.ServerConnector@58b27966{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 20:35:22  INFO: Started oejs.Server@5cc669d{STARTING}[12.1.6,sto=0] @613ms
+2026-05-04 20:44:34  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 20:44:34  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 20:44:34  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 20:44:34  INFO: Character encoding: windows-1252
+2026-05-04 20:44:34  INFO: Version: 6.12.2
+2026-05-04 20:44:34  INFO: Starting server...
+2026-05-04 20:44:35  INFO: HikariPool-1 - Starting...
+2026-05-04 20:44:35  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 20:44:35  INFO: HikariPool-1 - Start completed.
+2026-05-04 20:44:35  INFO: Set default schema name to PUBLIC
+2026-05-04 20:44:35  INFO: Successfully acquired change log lock
+2026-05-04 20:44:35  INFO: Clearing database change log checksums for database h2
+2026-05-04 20:44:35  INFO: Successfully released change log lock
+2026-05-04 20:44:35  INFO: Command execution complete
+2026-05-04 20:44:36  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:44:36  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:44:36  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 20:44:36  INFO: UPDATE SUMMARY
+2026-05-04 20:44:36  INFO: Run:                          0
+2026-05-04 20:44:36  INFO: Previously run:              36
+2026-05-04 20:44:36  INFO: Filtered out:                 0
+2026-05-04 20:44:36  INFO: -------------------------------
+2026-05-04 20:44:36  INFO: Total change sets:           36
+2026-05-04 20:44:36  INFO: Update summary generated
+2026-05-04 20:44:36  INFO: Command execution complete
+2026-05-04 20:44:37  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 20:44:37  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 20:44:37  INFO: Session workerName=node0
+2026-05-04 20:44:37  INFO: Started oeje10s.ServletContextHandler@6814262d{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7fc1fd31{STARTED}}
+2026-05-04 20:44:38  INFO: Started oeje10s.ServletContextHandler@6814262d{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7fc1fd31{STARTED}}
+2026-05-04 20:44:38  INFO: Started oejs.ServerConnector@66a8ff6d{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 20:44:38  INFO: Started oejs.Server@1abbc1d4{STARTING}[12.1.6,sto=0] @597ms
+2026-05-04 21:10:17  INFO: Stopping server...
+2026-05-04 21:10:39  INFO: Operating system name: Windows 11 version: 10.0 architecture: amd64
+2026-05-04 21:10:39  INFO: Java runtime name: OpenJDK 64-Bit Server VM vendor: Eclipse Adoptium version: 17.0.16+8
+2026-05-04 21:10:39  INFO: Memory limit heap: 8176mb non-heap: 0mb
+2026-05-04 21:10:39  INFO: Character encoding: windows-1252
+2026-05-04 21:10:39  INFO: Version: 6.12.2
+2026-05-04 21:10:39  INFO: Starting server...
+2026-05-04 21:10:39  INFO: HikariPool-1 - Starting...
+2026-05-04 21:10:39  INFO: HikariPool-1 - Added connection conn0: url=jdbc:h2:./database/data/database user=SA
+2026-05-04 21:10:39  INFO: HikariPool-1 - Start completed.
+2026-05-04 21:10:39  INFO: Set default schema name to PUBLIC
+2026-05-04 21:10:40  INFO: Successfully acquired change log lock
+2026-05-04 21:10:40  INFO: Clearing database change log checksums for database h2
+2026-05-04 21:10:40  INFO: Successfully released change log lock
+2026-05-04 21:10:40  INFO: Command execution complete
+2026-05-04 21:10:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 21:10:40  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 21:10:41  INFO: Reading from PUBLIC.DATABASECHANGELOG
+2026-05-04 21:10:41  INFO: UPDATE SUMMARY
+2026-05-04 21:10:41  INFO: Run:                          0
+2026-05-04 21:10:41  INFO: Previously run:              36
+2026-05-04 21:10:41  INFO: Filtered out:                 0
+2026-05-04 21:10:41  INFO: -------------------------------
+2026-05-04 21:10:41  INFO: Total change sets:           36
+2026-05-04 21:10:41  INFO: Update summary generated
+2026-05-04 21:10:41  INFO: Command execution complete
+2026-05-04 21:10:42  WARN: Port disabled due to conflict - Address already in use: bind - BindException (...)
+2026-05-04 21:10:42  INFO: jetty-12.1.6; built: 2026-01-27T18:53:19.182Z; git: 88ca559572b1c8858b3c5684bb0293fa64e5e90f; jvm 17.0.16+8
+2026-05-04 21:10:42  INFO: Session workerName=node0
+2026-05-04 21:10:42  INFO: Started oeje10s.ServletContextHandler@da5d5e1{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7d7d8911{STARTED}}
+2026-05-04 21:10:43  INFO: Started oeje10s.ServletContextHandler@da5d5e1{ROOT,/,b=file:///C:/Users/juanm/Documents/Traccat-Server/web/,a=AVAILABLE,h=oeje10s.SessionHandler@7d7d8911{STARTED}}
+2026-05-04 21:10:43  INFO: Started oejs.ServerConnector@57ce8892{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+2026-05-04 21:10:43  INFO: Started oejs.Server@4b20aa21{STARTING}[12.1.6,sto=0] @836ms

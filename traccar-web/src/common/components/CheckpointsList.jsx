@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { makeStyles } from 'tss-react/mui';
 import {
@@ -20,10 +20,12 @@ import {
     Box,
     Typography,
     Chip,
+    CircularProgress,
 } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import RouteIcon from '@mui/icons-material/Route';
 import { deleteCheckpoint } from '../../store/checkpoints';
 
 const useStyles = makeStyles()((theme) => ({
@@ -46,6 +48,14 @@ const useStyles = makeStyles()((theme) => ({
         gap: theme.spacing(1),
         fontWeight: 700,
         fontSize: '1.1rem',
+    },
+    routeBadge: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: theme.spacing(0.5),
+        marginTop: theme.spacing(0.5),
+        opacity: 0.85,
+        fontSize: '0.8rem',
     },
     tableContainer: {
         flex: 1,
@@ -94,6 +104,12 @@ const useStyles = makeStyles()((theme) => ({
         fontSize: '3rem',
         opacity: 0.5,
     },
+    loadingState: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: theme.spacing(4),
+    },
     deleteDialog: {
         '& .MuiDialog-paper': {
             borderRadius: '16px',
@@ -108,23 +124,82 @@ const useStyles = makeStyles()((theme) => ({
     },
 }));
 
-const CheckpointsList = ({ onEdit }) => {
+const CheckpointsList = ({ onEdit, deviceId }) => {
     const { classes } = useStyles();
     const dispatch = useDispatch();
 
-    const checkpoints = useSelector((state) => state.checkpoints.items);
-    const loading = useSelector((state) => state.checkpoints.loading);
+    const allCheckpoints = useSelector((state) => state.checkpoints.items);
+    const routes = useSelector((state) => state.routes.items);
+
+    const [filteredCheckpointIds, setFilteredCheckpointIds] = useState(null); // null = sin filtro (mostrar todos)
+    const [assignedRouteId, setAssignedRouteId] = useState(null);
+    const [loadingRoute, setLoadingRoute] = useState(false);
 
     const [deleteDialog, setDeleteDialog] = useState({
         open: false,
         checkpoint: null,
     });
 
+    // Cuando cambia el dispositivo seleccionado, cargar su ruta asignada y los checkpoints de esa ruta
+    useEffect(() => {
+        if (!deviceId) {
+            // Sin dispositivo seleccionado → mostrar todos
+            setFilteredCheckpointIds(null);
+            setAssignedRouteId(null);
+            return;
+        }
+
+        let cancelled = false;
+        setLoadingRoute(true);
+
+        const loadDeviceRoute = async () => {
+            try {
+                // 1. Obtener la ruta asignada al dispositivo
+                const deviceRoutesRes = await fetch(`/api/device-routes?deviceId=${deviceId}`);
+                if (!deviceRoutesRes.ok || cancelled) return;
+                const deviceRoutes = await deviceRoutesRes.json();
+
+                if (!deviceRoutes || deviceRoutes.length === 0) {
+                    // Dispositivo sin ruta → mostrar todos
+                    if (!cancelled) {
+                        setFilteredCheckpointIds(null);
+                        setAssignedRouteId(null);
+                    }
+                    return;
+                }
+
+                // Tomar la asignación más reciente (último elemento)
+                const latestAssignment = deviceRoutes[deviceRoutes.length - 1];
+                const routeId = latestAssignment.routeId;
+
+                if (!cancelled) setAssignedRouteId(routeId);
+
+                // 2. Obtener los checkpoints de esa ruta
+                const routeCpRes = await fetch(`/api/route-checkpoints?routeId=${routeId}`);
+                if (!routeCpRes.ok || cancelled) return;
+                const routeCheckpoints = await routeCpRes.json();
+
+                if (!cancelled) {
+                    const ids = new Set(routeCheckpoints.map((rc) => rc.checkpointId));
+                    setFilteredCheckpointIds(ids);
+                }
+            } catch (e) {
+                // En caso de error, mostrar todos
+                if (!cancelled) {
+                    setFilteredCheckpointIds(null);
+                    setAssignedRouteId(null);
+                }
+            } finally {
+                if (!cancelled) setLoadingRoute(false);
+            }
+        };
+
+        loadDeviceRoute();
+        return () => { cancelled = true; };
+    }, [deviceId]);
+
     const handleDeleteClick = (checkpoint) => {
-        setDeleteDialog({
-            open: true,
-            checkpoint,
-        });
+        setDeleteDialog({ open: true, checkpoint });
     };
 
     const handleDeleteConfirm = async () => {
@@ -142,7 +217,20 @@ const CheckpointsList = ({ onEdit }) => {
         onEdit(checkpoint);
     };
 
-    const checkpointsList = Object.values(checkpoints);
+    // Determinar la lista a mostrar
+    const allCheckpointsList = Object.values(allCheckpoints);
+    const checkpointsList = filteredCheckpointIds
+        ? allCheckpointsList.filter((cp) => filteredCheckpointIds.has(cp.id))
+        : allCheckpointsList;
+
+    const assignedRoute = assignedRouteId ? routes[assignedRouteId] : null;
+
+    const headerSubtitle = assignedRoute ? (
+        <Box className={classes.routeBadge}>
+            <RouteIcon sx={{ fontSize: '0.9rem' }} />
+            <span>{assignedRoute.name}</span>
+        </Box>
+    ) : null;
 
     return (
         <>
@@ -150,23 +238,41 @@ const CheckpointsList = ({ onEdit }) => {
                 <CardHeader
                     className={classes.header}
                     title={
-                        <Box className={classes.headerTitle}>
-                            <LocationOnIcon />
-                            <span>
-                                Checkpoints ({checkpointsList.length})
-                            </span>
+                        <Box>
+                            <Box className={classes.headerTitle}>
+                                <LocationOnIcon />
+                                <span>
+                                    Checkpoints ({checkpointsList.length})
+                                </span>
+                            </Box>
+                            {headerSubtitle}
                         </Box>
                     }
                 />
 
                 <CardContent style={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    {checkpointsList.length === 0 ? (
+                    {loadingRoute ? (
+                        <Box className={classes.loadingState}>
+                            <CircularProgress size={32} />
+                        </Box>
+                    ) : checkpointsList.length === 0 ? (
                         <Box className={classes.emptyState}>
                             <LocationOnIcon className={classes.emptyIcon} />
-                            <Typography>Sin checkpoints creados</Typography>
-                            <Typography variant="body2">
-                                Haz clic derecho en el mapa para agregar uno
-                            </Typography>
+                            {filteredCheckpointIds !== null ? (
+                                <>
+                                    <Typography>Sin checkpoints en esta ruta</Typography>
+                                    <Typography variant="body2">
+                                        Agrega checkpoints a la ruta desde Configuración
+                                    </Typography>
+                                </>
+                            ) : (
+                                <>
+                                    <Typography>Sin checkpoints creados</Typography>
+                                    <Typography variant="body2">
+                                        Haz clic derecho en el mapa para agregar uno
+                                    </Typography>
+                                </>
+                            )}
                         </Box>
                     ) : (
                         <TableContainer className={classes.tableContainer}>
@@ -258,3 +364,4 @@ const CheckpointsList = ({ onEdit }) => {
 };
 
 export default CheckpointsList;
+

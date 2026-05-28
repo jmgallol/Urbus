@@ -205,6 +205,7 @@ const MainPage = () => {
         open={checkpointsOpen}
         onClose={() => setCheckpointsOpen(false)}
         onEditCheckpoint={handleEditCheckpoint}
+        deviceId={selectedDeviceId}
       />
       {selectedDeviceId && (
         <StatusCard

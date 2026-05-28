@@ -156,15 +156,24 @@ const RoutePage = () => {
     );
 
     return (
-        <PageLayout menu={<SettingsMenu />} breadcrumbs={['settingsTitle', 'sharedRoutes']}>
-            <EditItemView
-                item={id ? route : null}
-                onSave={handleSave}
-                onDelete={handleDelete}
-                loading={loading}
-            >
-                <Container maxWidth="sm">
-                    <Paper sx={{ p: 3, mb: 3 }}>
+        <EditItemView
+            endpoint="routes"
+            item={formData}
+            setItem={setFormData}
+            validate={() => formData.name}
+            menu={<SettingsMenu />}
+            breadcrumbs={['settingsTitle', 'sharedRoutes']}
+            onItemSaved={(savedRoute) => {
+                if (!id) {
+                    dispatch(fetchRoutes());
+                    navigate(`/settings/route/${savedRoute.id}`);
+                } else {
+                    dispatch(fetchRoutes());
+                }
+            }}
+        >
+            <Container maxWidth="sm">
+                <Paper sx={{ p: 3, mb: 3 }}>
                         <TextField
                             fullWidth
                             label={t('sharedName')}
@@ -290,7 +299,6 @@ const RoutePage = () => {
                     </Dialog>
                 </Container>
             </EditItemView>
-        </PageLayout>
     );
 };
 

@@ -23,7 +23,7 @@ import org.traccar.storage.StorageName;
  * Extends GroupedModel to inherit permission system.
  */
 @StorageName("tc_checkpoints")
-public class Checkpoint extends GroupedModel {
+public class Checkpoint extends ExtendedModel {
 
     private String name;
     private String description;
