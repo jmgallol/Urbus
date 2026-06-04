@@ -19,6 +19,7 @@ import MapOverlay from '../map/overlay/MapOverlay';
 import MapGeocoder from '../map/geocoder/MapGeocoder';
 import MapScale from '../map/MapScale';
 import MapNotification from '../map/notification/MapNotification';
+import MapRouteCheckpointsPath from '../map/MapRouteCheckpointsPath';
 import useFeatures from '../common/util/useFeatures';
 import { fetchDeviceRoutes } from '../store/routes';
 
@@ -66,6 +67,7 @@ const MainMap = ({
         />
         <MapAccuracy positions={filteredPositions} />
         <MapLiveRoutes deviceIds={filteredPositions.map((p) => p.deviceId)} />
+        <MapRouteCheckpointsPath />
         <MapRouteOverlay />
         <MapPositions
           positions={filteredPositions}

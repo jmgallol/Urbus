@@ -98,7 +98,7 @@ const SettingsMenu = () => {
               title={t('sharedRoutes')}
               link="/settings/routes"
               icon={<DirectionsIcon />}
-              selected={location.pathname.startsWith('/settings/routes')}
+              selected={location.pathname.startsWith('/settings/route')}
             />
             {!features.disableComputedAttributes && (
               <MenuItem

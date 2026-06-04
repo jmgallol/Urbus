@@ -631,5 +631,8 @@
     "maintenanceStart": "Start",
     "maintenancePeriod": "Period",
     "appSubtitle": "Fleet Intelligence",
-    "loginInvalidCredentials": "Invalid username or password"
+    "loginInvalidCredentials": "Invalid username or password",
+    "sharedRoutes": "Routes",
+    "sharedSelectCheckpoint": "Select Checkpoint",
+    "sharedCheckpoints": "Checkpoints (Sequence)"
 }

@@ -631,5 +631,8 @@
     "maintenanceStart": "Iniciar",
     "maintenancePeriod": "Período",
     "appSubtitle": "Inteligencia de Flota",
-    "loginInvalidCredentials": "Email o contraseña incorrecto"
+    "loginInvalidCredentials": "Email o contraseña incorrecto",
+    "sharedRoutes": "Crear ruta",
+    "sharedSelectCheckpoint": "Seleccionar punto de control",
+    "sharedCheckpoints": "Puntos de control (Secuencia)"
 }

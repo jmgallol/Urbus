@@ -365,25 +365,29 @@ public class DatabaseStorage extends Storage {
 
         if (condition.getIncludeGroups()) {
 
-            boolean expandDevices;
+            boolean expandGroupedModels;
             String groupStorageName;
             if (GroupedModel.class.isAssignableFrom(condition.getOwnerClass())) {
-                expandDevices = Device.class.isAssignableFrom(condition.getOwnerClass());
+                expandGroupedModels = GroupedModel.class.isAssignableFrom(condition.getOwnerClass())
+                        && !Group.class.isAssignableFrom(condition.getOwnerClass());
                 groupStorageName = Permission.getStorageName(Group.class, condition.getPropertyClass());
             } else {
-                expandDevices = Device.class.isAssignableFrom(condition.getPropertyClass());
+                expandGroupedModels = GroupedModel.class.isAssignableFrom(condition.getPropertyClass())
+                        && !Group.class.isAssignableFrom(condition.getPropertyClass());
                 groupStorageName = Permission.getStorageName(condition.getOwnerClass(), Group.class);
             }
 
             result.append(" UNION ");
 
             result.append("SELECT DISTINCT ");
-            if (!expandDevices) {
+            if (!expandGroupedModels) {
                 if (outputKey.equals("groupId")) {
                     result.append("all_groups.");
                 } else {
                     result.append(groupStorageName).append('.');
                 }
+            } else {
+                result.append("grouped_models.");
             }
             result.append(outputKey);
             result.append(" FROM ");
@@ -408,12 +412,15 @@ public class DatabaseStorage extends Storage {
             result.append(groupStorageName);
             result.append(".groupId = all_groups.parentId");
 
-            if (expandDevices) {
+            if (expandGroupedModels) {
+                Class<?> groupedModelClass = GroupedModel.class.isAssignableFrom(condition.getOwnerClass())
+                        ? condition.getOwnerClass() : condition.getPropertyClass();
+                String groupedModelKey = Permission.getKey(groupedModelClass);
                 result.append(" INNER JOIN (");
-                result.append("SELECT groupId as parentId, id as deviceId FROM ");
-                result.append(getStorageName(Device.class));
+                result.append("SELECT groupId as parentId, id as ").append(groupedModelKey).append(" FROM ");
+                result.append(getStorageName(groupedModelClass));
                 result.append(" WHERE groupId IS NOT NULL");
-                result.append(") AS devices ON all_groups.groupId = devices.parentId");
+                result.append(") AS grouped_models ON all_groups.groupId = grouped_models.parentId");
             }
 
             result.append(" WHERE ");

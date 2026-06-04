@@ -62,6 +62,8 @@ const DevicePage = () => {
   const [item, setItem] = useState(uniqueId ? { uniqueId } : null);
   const [showQr, setShowQr] = useState(false);
   const [imageFile, setImageFile] = useState(null);
+  const [uniqueIdError, setUniqueIdError] = useState('');
+  const [checkingUniqueId, setCheckingUniqueId] = useState(false);
 
   // Route and checkpoint state
   const [selectedRouteId, setSelectedRouteId] = useState(null);
@@ -71,6 +73,45 @@ const DevicePage = () => {
   const [openCheckpointDialog, setOpenCheckpointDialog] = useState(false);
   const [selectedCheckpointId, setSelectedCheckpointId] = useState('');
   const [savingRoute, setSavingRoute] = useState(false);
+
+  // Check if uniqueId is available (only when creating new device)
+  useEffect(() => {
+    if (!item?.id && item?.uniqueId && item.uniqueId.trim()) {
+      const timer = setTimeout(async () => {
+        setCheckingUniqueId(true);
+        try {
+          const response = await fetch(`/api/devices?uniqueId=${encodeURIComponent(item.uniqueId)}`);
+          if (response.ok) {
+            const data = await response.json();
+            // Check if device exists - could be array or object
+            let deviceExists = false;
+            if (Array.isArray(data)) {
+              deviceExists = data.length > 0;
+            } else if (data && typeof data === 'object' && !Array.isArray(data)) {
+              // If it's an object with an id property, it exists
+              deviceExists = !!data.id;
+            }
+
+            if (deviceExists) {
+              setUniqueIdError(t('deviceIdentifierTaken') || 'Este identificador ya está en uso');
+            } else {
+              setUniqueIdError('');
+            }
+          } else {
+            setUniqueIdError('');
+          }
+        } catch (error) {
+          console.error('Error checking uniqueId:', error);
+          setUniqueIdError('');
+        } finally {
+          setCheckingUniqueId(false);
+        }
+      }, 500); // Debounce for 500ms
+      return () => clearTimeout(timer);
+    } else if (item?.id || !item?.uniqueId) {
+      setUniqueIdError('');
+    }
+  }, [item?.id, item?.uniqueId]);
 
   // Load current route assignment when editing device
   useEffect(() => {
@@ -235,7 +276,7 @@ const DevicePage = () => {
     (cp) => !routeCheckpoints.find((rc) => rc.checkpointId === cp.id),
   );
 
-  const validate = () => item && item.name && item.uniqueId;
+  const validate = () => item && item.name && item.uniqueId && !uniqueIdError && !checkingUniqueId;
 
   return (
     <EditItemView
@@ -263,7 +304,8 @@ const DevicePage = () => {
                 value={item.uniqueId || ''}
                 onChange={(event) => setItem({ ...item, uniqueId: event.target.value })}
                 label={t('deviceIdentifier')}
-                helperText={t('deviceIdentifierHelp')}
+                helperText={uniqueIdError || t('deviceIdentifierHelp')}
+                error={!!uniqueIdError}
                 disabled={Boolean(uniqueId)}
               />
             </AccordionDetails>
